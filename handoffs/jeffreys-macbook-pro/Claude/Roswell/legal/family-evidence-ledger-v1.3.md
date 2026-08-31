@@ -12,7 +12,7 @@ Per `2026-08-31_finish-delta-findings_RC.md` (quoting `_prior-analysis/roswell_c
 - **$59,771.38** advanced across 14 Zelle transfers, Aug 2025 to May 2026, to float repairs and the household during Laura's 2025 medical leave. Carried as a liability, to be repaid from insurance proceeds when CMG releases them.
 - Less one **$850.00** Zelle repayment, 2026-05-22.
 - **Outstanding, documented: $58,921.38.**
-- The full $20,000 repayment to Nancy is now settled (Section 3): **current outstanding $38,921.38.**
+- The $20,000 repayment is settled (Section 3), and the $8,837.38 CMG insurance was passed to Nancy — repaying her 2025-10-02 advance (Jeff confirmed 2026-08-31): **current outstanding $30,084.00** ($58,921.38 − $20,000 − $8,837.38). Total repaid to Nancy: $29,687.38.
 
 **The itemized 14 rows** (found in `2026-08-31_section5-rebuild_RC.md`, each tagged "Loan from Nancy — Roswell bridge (short-term; repay from insurance)"; sum verified to $59,771.38):
 
@@ -44,7 +44,7 @@ Per `2026-08-31_20k-repayment-resolution_RC.md`:
 
 - **Part 1, $15,000 via the CMG/Shellpoint Flex HELOC** (Laura + Jeffrey Mumford, loan #111677504415027 / NFT0000005594, later serviced by Shellpoint as loan 0697312494). Mechanism and timing verified by email. Amount and payee (Nancy) confirmed directly by Jeff, 2026-08-31 — **settled, and independently corroborated:** Nancy's own iMessage, 2026-06-04 21:46 PT, "The $15,000 cleared and everything's OK." A Shellpoint draw-history statement or check image is optional backup documentation, not a blocker.
 - **Part 2, $5,000 via Chase 6/1/26 — confirmed as repayment.** Nancy is a signer on ...2585; Jeff confirms he sent this $5,000 to her through that account. Reinstated as repayment despite the internal-rail appearance. The bank's own memo on this transaction is not a custom note, it's Chase's system-generated reference ("Transaction#: 29447000314") — no "balance" language, contrary to what Jeff thought he'd written there. No direct iMessage confirmation of this specific $5,000 was found (message history checked back only to 6/1 evening); closest same-day lead is Nancy's 2026-06-01 23:25 PT text "Need to run to the bank to deposit check" — plausible but not confirmed to be this transaction.
-- **Net status: full $20,000 repaid to Nancy (settled) — $15,000 via the HELOC (Part 1) and $5,000 via ...2585 (Part 2).**
+- **Net status: $29,687.38 repaid to Nancy — $850 (5/22/26) + $20,000 ($15,000 HELOC + $5,000 via ...2585) + $8,837.38 (CMG insurance passed to her, per Jeff 2026-08-31). Outstanding $30,084.00.**
 
 ## 4. HELOC facility (carrying-cost evidence)
 
@@ -69,7 +69,7 @@ Per `2026-08-31_finish-delta-findings_RC.md`:
 
 Per `2026-08-31_counter-proposal_v1.1.md` Section 4.2 and its strategy note:
 
-- Current gross claim: **$32,659.12** advanced, against **$8,837.38** received via CMG escrow disbursement (check #00001432). Does not yet include HVAC (~$20,000 mini-splits), carrying costs, or GC labor.
+- Current gross claim: **$32,998.09** advanced (corrected for the $546.93 duplicate + $885.90 recovery). The **$8,837.38** CMG escrow disbursement (check #00001432) is **not netted** against Jeff's advances — it is Nancy's fronted insurance, passed to her (§3), and lives on her ledger. Does not yet include HVAC (~$20,000 mini-splits), carrying costs, or GC labor.
 - The strategy note (2026-08-31) says only 28% is documented and flags the appliance and cabinet receipts as missing. **That's stale.** `~/ClaudeBox/roswell-archive/08 Financials/HOME-DEPOT-ORDERS-RC.md`, pulled 2026-08-14, already has both, transcribed line-by-line from the order pages:
   - **Cabinets, order H4017-565922, $4,599.76** — full box/trim itemization, Amex card ending 1000, delivered in three shipments Dec 8/9/29, ledger txn 1140.
   - **Appliances, order H4017-567029, $8,269.00** — Café refrigerator/range/dishwasher/microwave itemized with paid vs. list price, delivered Jan 11 2026, ledger txn 1135. Flags two spec corrections worth checking against the plan set: the fridge is standard depth (not counter depth as the finishes checklist says), and the 4th appliance is an OTR microwave, not a range hood — there is no separate hood.
@@ -81,7 +81,7 @@ Per `2026-08-31_counter-proposal_v1.1.md` Section 4.2 and its strategy note:
 ### 🔴 Adverse findings, per `2026-08-31_section5-rebuild_RC.md` — read before asserting Section 5.1
 
 1. **Nancy's loan timing lines up with Jeff's remediation payments.** Her $3,000 on 2025-08-01 landed 5 days before Jeff's $8,823.38 Mold Masters payment (8/6/25). Her $8,837.38 on 2025-10-02 is within $2.62 of Jeff's $8,840.00 Mold Masters payment 29 days later (10/31/25). Her bridge loans begin 5 days before Jeff's first large remediation payment and continue through the whole rebuild. The file's own conclusion: **"You cannot bill Nancy for spending money Nancy lent you."** A $23,821.74 reimbursement claim against her does not survive first contact with her attorney if it's substantially her own money.
-2. **The $8,837.38 may be double-counted, in Jeff's favor, which is the dangerous direction.** Nancy's $8,837.38 Zelle on 2025-10-02 (tagged bridge loan) and the CMG/Proctor insurance check for exactly $8,837.38 (issued 5/28/26, landed in Chase 7/21/26 — the same figure netted in the counter-proposal's $8,837.38 "CMG escrow disbursement received") are very likely the same money: Nancy fronted the insurance proceeds eight months before the carrier released them, and the check repaid her when it landed. **If so, netting that $8,837.38 against Jeff's own advances (as counter-proposal v1.1 Section 4.2 does, to reach $23,821.74 net) is wrong** — it should instead reduce what Nancy is owed, not reduce what Jeff claims. This is flagged as open and unresolved, not confirmed either way.
+2. **The $8,837.38 may be double-counted, in Jeff's favor, which is the dangerous direction.** Nancy's $8,837.38 Zelle on 2025-10-02 (tagged bridge loan) and the CMG/Proctor insurance check for exactly $8,837.38 (issued 5/28/26, landed in Chase 7/21/26 — the same figure netted in the counter-proposal's $8,837.38 "CMG escrow disbursement received") are very likely the same money: Nancy fronted the insurance proceeds eight months before the carrier released them, and the check repaid her when it landed. **If so, netting that $8,837.38 against Jeff's own advances (as counter-proposal v1.1 Section 4.2 does, to reach $23,821.74 net) is wrong** — it should instead reduce what Nancy is owed, not reduce what Jeff claims. **RESOLVED 2026-08-31 (Jeff confirmed the $8,837.38 was passed to Nancy) — see `2026-08-31_double-count-resolution_RC.md`.** The $8,837.38 is off Jeff's advance side; his advances are $32,998.09 gross, the $23,821.74 net figure is retired, and Nancy's outstanding is $30,084.00.
 3. **Corrected gross advance figure: $32,998.09**, not $32,659.12 — the substantiation file's $32,659.12, less the confirmed $546.93 duplicate, plus the recovered $885.90 "rocwll" orders (Section 7). **Do not net the CMG $8,837.38 against this until finding 2 above is resolved.**
 
 ## 7. Ledger corrections found during this reconstruction pass

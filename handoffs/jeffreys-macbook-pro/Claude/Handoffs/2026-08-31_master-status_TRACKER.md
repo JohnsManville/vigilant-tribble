@@ -16,11 +16,11 @@
 | **Total** | **9** | **5** | **5** | **17** | **4** | **40** |
 
 **Critical path — the few blockers gating the most:**
-1. **Jeff's own real-estate counsel** → gates the entire Roswell legal negotiation (T1) and the counter-proposal (T2, T4).
-2. **Jeff confirms he has Purcell's status** (T14) → the one item that "outranks everything" per multiple handoffs; deadline already passed unnoticed.
-3. **MacBook GitHub account key** (T17) → gates two-machine sync; also the reason the handoff mirror is mini-driven.
-4. **The $8,837.38 double-count** (T2/T4) → gates the final Roswell money figure used in both the letter and the legal claim.
-5. **Jeff's covert-audit stand-up/stand-down decision** (T16) → two unauthenticated services currently live on a shared family machine.
+1. **Route the Roswell reply through Jeff's (now-engaged) counsel, then his go to send** (T1) → gates the negotiation; counsel is no longer the blocker, only the review + go.
+2. **MacBook GitHub account key** (T17) → needs Jeff's GitHub login (can't be delegated); gates two-machine sync. Handoff mirror already routes around it.
+3. **Jeff's covert-audit stand-up/stand-down decision** (T16) → two unauthenticated services currently live on a shared family machine.
+4. **Jeff's payee-naming on the FinRecon cash worksheet** (T7) → gates the 2024–25 Schedule C.
+5. *(Resolved 2026-08-31: the $8,837.38 double-count — insurance passed to Nancy, balance $30,084.00. Purcell confirmed stalled, awaiting Jeff's push/shelve call.)*
 
 ---
 
@@ -30,9 +30,9 @@
 | ID | Thread | Summary | Status | Owner | Depends on | Next action |
 |---|---|---|---|---|---|---|
 | T1 | Property transfer negotiation (Nancy/Dale) | Counter-proposal drafted (v1.1); reply to Nancy's attorney written, unsent. **Jeff now has his own real-estate counsel (2026-08-31).** | 🟢 | Jeff's attorney review + Jeff's go to send | **Claude:** correct reply date to Aug 28, fill recipients, package for Jeff's attorney. **Jeff:** route to attorney, then give go to send. |
-| T2 | Insurance claim (Safeco/CMG) | Coverage accepted; bathroom scope found ($8,837.38 paid); kitchen scope + one invoice missing. **$8,837.38 double-count RESOLVED (mechanics).** | 🟢 | one Jeff input (was insurance passed to Nancy?); Peter Gowans (invoice) | **Claude:** pull the two Safeco PDFs; **Jeff:** email Peter Gowans for the $8,840 invoice; answer the one double-count question (see `2026-08-31_double-count-resolution_RC.md`). |
+| T2 | Insurance claim (Safeco/CMG) | Coverage accepted; bathroom scope found ($8,837.38 paid); kitchen scope + one invoice missing. **$8,837.38 double-count RESOLVED — insurance passed to Nancy (Jeff confirmed 2026-08-31).** | 🟢 | Peter Gowans (invoice); Safeco (kitchen scope) | **Claude:** pull the two Safeco PDFs; **Jeff:** email Peter Gowans for the $8,840 invoice + crew receipts. |
 | T3 | Build — finish & occupy (incl. electrical) | Pre-drywall gate; new 9-circuit panel decided; permits dark; several finish picks open. | 🔴 | Jeff's 5 build decisions; vermiculite test; Milwaukie permits | **Jeff:** test vermiculite (safety gate), pick sink, book Rose City Labs clearance test, pull permit status, confirm grab-bar blocking. |
-| T4 | Family letter + evidence ledger | Letter at v1.19 (3 fills); ledger v1.2; $20k repayment settled → balance **$38,921.38** ($30,084.00 if the $8,837.38 insurance was passed to Nancy). Double-count RESOLVED. | 🟢 | Finish mini harvest; GC hours; one Jeff input on the $8,837.38 | **Claude:** finish mini harvest → ledger; reconstruct GC hours. **Jeff:** paper the $15k HELOC draw; answer the double-count question. |
+| T4 | Family letter + evidence ledger | Letter at v1.19 (3 fills); ledger v1.3; $20k + $8,837.38 insurance repaid → balance **$30,084.00** (confirmed 2026-08-31). Double-count RESOLVED. | 🟢 | Finish mini harvest; GC hours | **Claude:** finish mini harvest → ledger; reconstruct GC hours. **Jeff:** paper the $15k HELOC draw. |
 | T5 | FinRecon Roswell dataset load ("Deliverable G") | Schema ready (`claim_flag`, 345 tests); Roswell documents not yet loaded. | 🟡 | none (unblocked) | **Claude:** load the Roswell receipts/docs into `documents`, tagging claim/owner + room. |
 | T6 | Fresno Family Timeline (confidential) | Private factual archive (WordPress + 2 Notion DBs); maintenance only. | 🟢 | Jeff (any more instances) | **Jeff:** confirm whether more instances belong on record; else dormant. Keep factual, never a "case." |
 

@@ -179,7 +179,7 @@ The center of gravity across the whole corpus. 2870 SE Roswell St, Milwaukie OR:
 ---
 
 #### Thread 4 — Family letter to Nancy + evidence ledger
-**Status (one line):** Truth-copy of the letter is at v1.19 with 3 fills outstanding; the money ledger is rebuilt to v1.2 with the $20k repayment and the $8,837.38 insurance passthrough settled (outstanding balance **$30,084.00**); a send version waits on deed sequencing.
+**Status (one line):** Truth-copy of the letter is at v1.19 with 3 fills outstanding; the money ledger is at v1.3 (`family-evidence-ledger-v1.3.md`, supersedes v1.2_REBUILT, adds the completed mini-harvest) with the $20k repayment and the $8,837.38 insurance passthrough settled (outstanding balance **$30,084.00**); a send version waits on deed sequencing.
 
 **Key decisions**
 - Letter leads with labor, owns Nancy's bridge loans in one sentence, keeps the $20k repayment OUT until documented, and the Diana-rehab line OUT unless Jeff supplies a date. No em dashes; one dry-humor line max. Truth copy and send copy are separate deliverables.
@@ -187,7 +187,7 @@ The center of gravity across the whole corpus. 2870 SE Roswell St, Milwaukie OR:
 - Account **…2585 is Jeff's own second Chase account** (Nancy is a signer, not owner) — this retracts an earlier wrong finding that …2585 was a source of $24,269 in uncounted Nancy advances.
 
 **Open items**
-- 3 letter fills; finish the Mac mini iMessage/chat harvest (laura_export group chats, CallHistory, HWA folder, USAA 2026 statements) → ledger v1.2 is current source (`legal/family-evidence-ledger-v1.2_REBUILT.md`); still to do in the ledger: locate the CMG check #00001432 photo, resolve the $8,837.38 double-count, then reconstruct GC hours.
+- 3 letter fills; finish the Mac mini iMessage/chat harvest (laura_export group chats, CallHistory, HWA folder, USAA 2026 statements) → ledger v1.2 is current source (`legal/family-evidence-ledger-v1.2_REBUILT.md`); (current ledger: `family-evidence-ledger-v1.3.md`) still to do: locate the CMG check #00001432 photo, resolve the $8,837.38 double-count, then reconstruct GC hours.
 - Document the $15k HELOC draw (statement/check image) — though it's corroborated by Nancy's iMessage 2026-06-04 "The $15,000 cleared and everything's OK," so this is now backup, not a blocker.
 
 **Blockers**

@@ -20,7 +20,8 @@ BRANCH="${HANDOFF_SYNC_BRANCH:-main}"
 # Default: the MacBook Pro via its `mbp` ssh alias.
 REMOTES=("${HANDOFF_SYNC_REMOTES:-mbp:jeffreys-macbook-pro}")
 
-host_slug() { echo "$1" | tr ' ' '-' | tr '[:upper:]' '[:lower:]'; }
+# lowercase, drop apostrophes (straight + curly), collapse other non-alnum to single dashes
+host_slug() { printf '%s' "$1" | tr '[:upper:]' '[:lower:]' | sed "s/'//g; s/$(printf '\xe2\x80\x99')//g" | tr -cs 'a-z0-9' '-' | sed 's/^-//; s/-$//'; }
 LOCAL_HOST="$(host_slug "$(scutil --get ComputerName 2>/dev/null || hostname -s)")"
 
 RSYNC_FILTER=(--include='*/' --include='*.md' --include='*.txt' --include='*.csv' --exclude='*')

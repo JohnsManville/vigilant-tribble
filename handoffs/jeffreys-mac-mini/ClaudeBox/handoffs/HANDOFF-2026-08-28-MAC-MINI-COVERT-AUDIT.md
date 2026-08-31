@@ -67,6 +67,40 @@ on disk this sweep; the LAN-exposure characterization follows directly from the 
 
 ---
 
+## UPDATE — 2026-08-30 evening sweep (refresh; no state change since 8/29)
+
+**Session `35f6a0e1` resumed 2026-08-30 12:10 PDT (19:10Z) for ~1 minute — a status poll,
+not a build.** Jeff typed *"Any update?"*; the session ran two status checks and confirmed
+Phase 2 is still up with **no security events detected**. Nothing was armed, loaded, or
+changed. The session's own closing line: still *"waiting on interactive sudo (to load
+state-tracker + auth-watcher daemons)"* and *"Phase 1 confirmation (AnyDesk, TCC,
+Bluetooth),"* with Phase 3 (hardening) staged behind those.
+
+**Live state re-verified on disk this sweep (2026-08-30 22:00 PDT):**
+- `covert-service.py` **RUNNING**, PID **14983**, `LISTEN *:7734` (unchanged since 8/29).
+- `dashboard.py` **RUNNING**, PID **14985**, `LISTEN *:8765`, still **no token** (unchanged).
+- `DELIVERY_ARMED` present (Aug 29 13:53); **no `AUDIO_ON`** (audio still off).
+- `.covert-token` present.
+- **Covert launchd daemons still NOT loaded** — `launchctl list | grep oddjobs` shows the
+  routine ClaudeBox jobs (handoff, distill, morning, heartbeat, capture=distill-capture,
+  finrecon) but **none** of `com.oddjobs.claudebox.{auth-watcher,canary-watcher,state-tracker}`.
+  Persistence across reboot is still not in place; the two services remain `nohup` processes
+  that die on reboot.
+- The state snapshot count is still **1** and the fingerprint baseline still **1 of 14** — the
+  daily cron that would grow them is gated behind the un-loaded launchd daemons, so neither has
+  advanced since activation.
+
+**Everything in the 8/29 block below still stands** — the LAN-exposure constraint (`:8765`
+tokenless on `*`), the burned bearer token, the four still-open Phase 1 confirmations, and the
+"decision not a build" first-move. Nothing about the 8/30 poll changes any of it.
+
+**Status after this refresh: unchanged — WIP, armed and running, blocked on Jeff.**
+Confidence **91/100** — every process, port, and marker re-verified on disk this sweep; the
+8/30 transcript is short and unambiguous (a status query and its answer, no tool call that
+mutates state).
+
+---
+
 ## THE AUDIT FINDING (Phases 1–4, read-only)
 
 - **No evidence of unauthorized access** in the retained unified-log window (**Aug 17–28,

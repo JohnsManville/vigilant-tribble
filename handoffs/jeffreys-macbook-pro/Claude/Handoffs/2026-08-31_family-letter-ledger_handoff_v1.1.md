@@ -11,7 +11,7 @@
 ## Compacted Context
 Jeff is writing a no-holds-barred letter to his mother Nancy about six years of the Roswell house (2870 SE Roswell St, Milwaukie: bought 2020 for her, refi 2022 under Jeff+Nancy, Laura on deed, mold loss June 2025, Jeff acting GC). Companion evidence ledger documents everything. Sweeps already run: Gmail (all family), full MacBook iMessage chat.db (433k messages, decoded), Kelsey Dobrenz, Rusty Olds, Patrick Todd, Nancy threads, FinRecon SQLite, CMG/Shellpoint HELOC email trail.
 
-**Cast and handles**: Nancy (Mom) +1-503-333-0720, mumford.nancy@gmail.com. Julie +1-503-327-9808. Diana (Gregg) +1-503-830-9494. Tracy +1-503-799-2908 (Minneapolis). Laura +1-503-709-9395. Kelsey Dobrenz +1-408-398-8335 (chosen sister). Rusty Olds +1-971-277-8021 (chosen brother). Patrick Todd +1-651-788-1833 (Nancy's partner, holds her POA since Jul 26).
+**Cast and handles**: Nancy (Mom) +1-503-333-0720, mumford.nancy@gmail.com. Julie +1-503-327-9808. Diana (Gregg) +1-503-830-9494. Tracy +1-503-799-2908 (Minneapolis). Laura +1-503-709-9395. Kelsey Dobrenz +1-408-398-8335 (chosen sister). Rusty Olds +1-971-277-8021 (chosen brother). Patrick Todd +1-651-788-1833 (Nancy's BROTHER, corrected by Jeff 2026-08-31; holds her POA since Jul 26).
 
 **Documented final-chapter timeline** (full table in ledger): May 29 good-faith email, Jul 19-22 Patrick doing his own repairs at Roswell, Jul 24-26 Patrick pressing "the plan for the Roswell property" lunches, Jul 26 Patrick: "Your mom transferred her Power of Attorney from Julie to me", Aug 4-6 Jeff+Laura cancel her tenancy, Aug 11 first Dale proposal, Aug 28 Jeff to Nancy: "I'm not sure I wanna talk to you again", ~Aug 30 revised terms.
 

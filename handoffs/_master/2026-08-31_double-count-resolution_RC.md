@@ -1,6 +1,8 @@
 # $8,837.38 Double-Count — Resolution
-**Date:** 2026-08-31 · Status: mechanics RESOLVED; one factual input needed from Jeff
+**Date:** 2026-08-31 · Status: **RESOLVED IN FULL** — Jeff confirmed 2026-08-31 the $8,837.38 was passed to Nancy.
 **Resolves:** finding 2 in `family-evidence-ledger-v1.2_REBUILT.md` §6 (previously "open, unresolved")
+
+> **ANSWERED 2026-08-31:** The $8,837.38 CMG insurance that landed in Chase …0922 on 2026-07-21 **was passed to Nancy.** It therefore repays her 2025-10-02 advance. **Nancy's outstanding balance is $30,084.00.** The "forwarded / credited to Nancy" column below is the operative one.
 
 ## The problem
 The figure **$8,837.38** was being used in two places at once:
@@ -28,8 +30,8 @@ The $8,837.38 must appear **once**, and it belongs on **Nancy's ledger**, not as
 
 Either way, **Jeff's advance claim is $32,998.09 gross** and **the $23,821.74 net figure is dead** — that correction stands now. Only Nancy's outstanding balance ($30,084.00 vs $38,921.38) waits on the answer above.
 
-## Recommended default until Jeff answers
-Carry Nancy's outstanding at **$38,921.38** (the conservative "retained" figure — it doesn't credit a repayment that isn't documented), with a footnote that it drops to **$30,084.00** if the insurance was passed to her. Do not send any counter-proposal that still shows "$23,821.74 net"; state Jeff's advances at $32,998.09 gross with the $8,837.38 handled separately as above.
+## Resolved figure (Jeff confirmed the insurance was passed to Nancy)
+Nancy's outstanding balance is **$30,084.00** ($59,771.38 advanced − $850 − $20,000 − $8,837.38). Total repaid to Nancy: $29,687.38. Jeff's advance claim stands at **$32,998.09 gross**; the $8,837.38 is fully off Jeff's advance side (it was Nancy's fronted insurance, in and back out). The "$23,821.74 net" figure is dead.
 
 ## Downstream edits this forces
 - `counter-proposal_v1.1.md` §4.2: replace "$32,659.12 advanced … $23,821.74 net" with "$32,998.09 documented advances (gross); the $8,837.38 CMG receipt is Nancy's fronted insurance, resolved on her ledger, not netted here."

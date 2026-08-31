@@ -15,7 +15,7 @@ Status key: **not started / in progress / blocked (on Jeff or external) / done**
 ### Roswell cluster
 | # | Thread | Status | Last activity |
 |---|--------|--------|---------------|
-| 1 | Roswell — property transfer negotiation (Nancy / Dale) | in progress (reply drafted, unsent) | 2026-08-31 |
+| 1 | Roswell — property transfer negotiation (Nancy / Dale) | in progress (counsel engaged; reply drafted, unsent) | 2026-08-31 |
 | 2 | Roswell — insurance claim (Safeco / CMG) | in progress | 2026-08-31 |
 | 3 | Roswell — build / finish & occupy (incl. electrical) | blocked on Jeff decisions | 2026-08-31 |
 | 4 | Family letter to Nancy + evidence ledger | in progress (letter v1.19, ledger v1.2) | 2026-08-31 |
@@ -40,7 +40,7 @@ Status key: **not started / in progress / blocked (on Jeff or external) / done**
 | # | Thread | Status | Last activity |
 |---|--------|--------|---------------|
 | 13 | Fairmount deposit (Josh Loerzel) | done (paid 2026-08-21) | 2026-08-23 |
-| 14 | Purcell deck matter | blocked / on hold (status unknown — ask Jeff) | ~2026-08-23 |
+| 14 | Purcell deck matter | blocked / stalled (Jeff confirms no progress) | 2026-08-31 |
 | 15 | DGUTS '26 raft trip (campingteam.us) | done bar one tail action; Form never edited | ~2026-08-02 |
 
 ### Infrastructure / tooling / meta
@@ -87,7 +87,7 @@ The center of gravity across the whole corpus. 2870 SE Roswell St, Milwaukie OR:
 ---
 
 #### Thread 1 — Roswell property transfer negotiation (Nancy / Dale)
-**Status (one line):** Counter-proposal drafted through v1.1 and a holding reply to Nancy's attorney is written but UNSENT, pending Jeff's own real-estate counsel and his go-ahead.
+**Status (one line):** Counter-proposal drafted through v1.1 (Section 4/5 corrected for the double-count) and a holding reply to Nancy's attorney is written but UNSENT. **Jeff now has his own real-estate counsel (confirmed 2026-08-31)** — the reply needs his attorney's review, then his go.
 
 **Key decisions**
 - Do not reply to Nancy's attorney or confirm any term in writing until Jeff has independent counsel. Elliott Dale represents Nancy, not Jeff.
@@ -102,7 +102,7 @@ The center of gravity across the whole corpus. 2870 SE Roswell St, Milwaukie OR:
 - CMG monthly-payment figure unresolved: $1,911/mo (letter) vs $2,246.17/mo (Jeff's own records, possibly a different loan) — ~$2,000 swing.
 
 **Blockers**
-- Jeff must (a) confirm he has/gets his own real-estate attorney and (b) give the go to send the reply. The escrow start date is the single most load-bearing unknown and only Dale can supply it.
+- Reply needs Jeff's attorney's review, then Jeff's go to send (counsel is now engaged). The escrow start date is the single most load-bearing unknown and only Dale can supply it.
 
 **Deadlines**
 - Dale letter #1 (Aug 11) response deadline was **Aug 24, 2026 — passed, no response on file** (letter was misaddressed to jeff@odd-jobs.**com**, resent by paralegal Lauren Lewis Aug 13).
@@ -131,7 +131,7 @@ The center of gravity across the whole corpus. 2870 SE Roswell St, Milwaukie OR:
 **Open items**
 - Safeco **bathroom** scope found (Gmail 2025-09-23, Adrian.DeMarre@libertymutual.com): Total Cost of Repairs $10,981.03, Payment To You $8,837.38 — the source of CMG/Proctor check #00001432. Still need: the two attached PDFs for line detail; whether a **kitchen-specific** carrier scope exists; confirm whether public adjuster **Scott Hedges** (Precision Public Adjusting NW) was engaged and by whom.
 - Mold Masters payment #2 — **$8,840.00 (2025-10-31) has no invoice anywhere** (third-highest-value receipt to recover; Peter Gowans can produce it in one email).
-- Possible **$8,837.38 double-count**: Nancy's Zelle of 2025-10-02 ($8,837.38) vs the CMG check (also $8,837.38) — unresolved, and it changes the casualty basis. A real error currently in Jeff's favor.
+- **$8,837.38 double-count — RESOLVED (2026-08-31).** Nancy's 2025-10-02 Zelle ($8,837.38) and the CMG check ($8,837.38) were the same money: Nancy fronted the insurance, and Jeff passed the CMG check to her when it landed (Jeff confirmed). It is off Jeff's advance side entirely; Nancy's outstanding drops to $30,084.00. See `2026-08-31_double-count-resolution_RC.md`.
 - `$546.93` duplicate transaction (txn 5397/5398, 2025-11-24) to clear; `$885.90` "rocwll" typo charges recovered.
 
 **Blockers**
@@ -179,7 +179,7 @@ The center of gravity across the whole corpus. 2870 SE Roswell St, Milwaukie OR:
 ---
 
 #### Thread 4 — Family letter to Nancy + evidence ledger
-**Status (one line):** Truth-copy of the letter is at v1.19 with 3 fills outstanding; the money ledger is rebuilt to v1.2 with the $20k repayment settled (outstanding balance **$38,921.38**); a send version waits on deed sequencing.
+**Status (one line):** Truth-copy of the letter is at v1.19 with 3 fills outstanding; the money ledger is rebuilt to v1.2 with the $20k repayment and the $8,837.38 insurance passthrough settled (outstanding balance **$30,084.00**); a send version waits on deed sequencing.
 
 **Key decisions**
 - Letter leads with labor, owns Nancy's bridge loans in one sentence, keeps the $20k repayment OUT until documented, and the Diana-rehab line OUT unless Jeff supplies a date. No em dashes; one dry-humor line max. Truth copy and send copy are separate deliverables.
@@ -193,7 +193,7 @@ The center of gravity across the whole corpus. 2870 SE Roswell St, Milwaukie OR:
 **Blockers**
 - HD PDF downloads bounce to a jeff@odd-jobs.org re-sign-in (needs Jeff); a few mini-harvest items unmined.
 
-**Money picture (authoritative, newest):** Nancy advanced **$59,771.38** across 14 Zelle transfers (2025-08-01 → 2026-05-01); repaid $850 (2026-05-22) + $20,000 → **outstanding $38,921.38**. Jeff's corrected documented Roswell spend **$32,998.09**. Rate $128/hr; 86 documented working days (~"north of sixty grand" labor). HELOC: Shellpoint (was CMG) loan 0697312494, secured on 2908 SE Malcolm, $75k limit, $73,790.37 principal, 8.09% APR, interest-only $507.16/mo.
+**Money picture (authoritative, newest):** Nancy advanced **$59,771.38** across 14 Zelle transfers (2025-08-01 → 2026-05-01); repaid $850 (2026-05-22) + $20,000 + $8,837.38 (CMG insurance passed to Nancy, confirmed 2026-08-31) → **outstanding $30,084.00**. Jeff's corrected documented Roswell spend **$32,998.09**. Rate $128/hr; 86 documented working days (~"north of sixty grand" labor). HELOC: Shellpoint (was CMG) loan 0697312494, secured on 2908 SE Malcolm, $75k limit, $73,790.37 principal, 8.09% APR, interest-only $507.16/mo.
 
 **Cast (for the letter):** Nancy (Mom); Julie (+1-503-327-9808); Diana (Gregg); Tracy (Minneapolis); Laura (+1-503-709-9395); Kelsey Dobrenz (chosen sister); Rusty Olds (chosen brother); Patrick Todd (Nancy's partner, holds POA). Laura's rehab: Betty Ford, Newberg, checked in Jun 16 2025.
 
@@ -498,7 +498,7 @@ Threads carried as their own manifest rows rather than folded (so nothing is los
 
 Trust rule throughout: **newest timestamp wins**, and each is flagged either way.
 
-1. **Roswell outstanding balance to Nancy — $58,921.38 vs $43,921.38 vs $38,921.38.** Trusted: **$38,921.38** (v1.4 handoff + `family-evidence-ledger-v1.2_REBUILT`, both 2026-08-31, both repayment legs settled). The higher figures are earlier states before the $20k was resolved.
+1. **Roswell outstanding balance to Nancy — $58,921.38 → $43,921.38 → $38,921.38 → $30,084.00.** Trusted: **$30,084.00** — the $20k repayment ($15k HELOC + $5k via ...2585) plus the $8,837.38 CMG insurance passed to Nancy (Jeff confirmed 2026-08-31, resolving the double-count). The higher figures are earlier states before each repayment leg resolved.
 2. **Dale revision date — Aug 30 vs Aug 28.** Trusted: **Aug 28** (proven by the verbatim email extract; email timestamp 2026-08-28 23:45 UTC). The counter-proposal, counsel-packet, reply draft, and both timeline CSVs still say Aug 30 and need correcting — flagged as an open cleanup.
 3. **The 6/1/26 $5,000 (…2585) — repayment vs Jeff's internal transfer.** Trusted: **repayment** (Jeff-confirmed, per v1.4 + ledger v1.2). The `2585-account-finding` file argued it was NOT a repayment and was never edited to match the later reinstatement.
 4. **…2585 as source of $24,269 in Nancy advances.** Trusted: **retracted** (it's Jeff's account). But the retracted row and three inflow rows still sit in `ROSWELL-TIMELINE-v1.1.csv` — the CSV was never corrected. Flagged for cleanup.

@@ -47,6 +47,19 @@ copy_local "$HOME/Claude/Handoffs"      "Claude/Handoffs"
 copy_local "$HOME/ClaudeBox/handoffs"   "ClaudeBox/handoffs"
 copy_local "$HOME/Claude/Roswell/legal" "Claude/Roswell/legal"
 copy_local "$HOME/Claude/Roswell/build" "Claude/Roswell/build"
+
+# Claude Code CLI home: config + plans + any handoff/state notes.
+# Prune the bulky, non-handoff subdirs (raw transcripts, telemetry, caches).
+CC_PRUNE=(--exclude='projects/' --exclude='telemetry/' --exclude='uploads/' \
+  --exclude='backups/' --exclude='sessions/' --exclude='session-env/' \
+  --exclude='tasks/' --exclude='plugins/' --exclude='skills/' \
+  --exclude='scheduled-tasks/' --exclude='shell-snapshots/' --exclude='todos/')
+if [ -d "$HOME/.claude" ]; then
+  mkdir -p "handoffs/$LOCAL_HOST/ClaudeCode/dot-claude"
+  rsync -a --delete --prune-empty-dirs "${CC_PRUNE[@]}" "${RSYNC_FILTER[@]}" \
+    "$HOME/.claude/" "handoffs/$LOCAL_HOST/ClaudeCode/dot-claude/"
+fi
+
 date -u +"%Y-%m-%dT%H:%M:%SZ  $LOCAL_HOST  local" > "handoffs/$LOCAL_HOST/.last-sync"
 
 # --- remotes (the MacBook Pro over ssh) ---
@@ -62,6 +75,11 @@ for pair in "${REMOTES[@]}"; do
   copy_remote '~/ClaudeBox/handoffs'   "ClaudeBox/handoffs"
   copy_remote '~/Claude/Roswell/legal' "Claude/Roswell/legal"
   copy_remote '~/Claude/Roswell/build' "Claude/Roswell/build"
+  if ssh -o BatchMode=yes "$alias" 'test -d ~/.claude' 2>/dev/null; then
+    mkdir -p "handoffs/$ns/ClaudeCode/dot-claude"
+    rsync -a --delete --prune-empty-dirs -e 'ssh -o BatchMode=yes' "${CC_PRUNE[@]}" "${RSYNC_FILTER[@]}" \
+      "$alias:~/.claude/" "handoffs/$ns/ClaudeCode/dot-claude/"
+  fi
   date -u +"%Y-%m-%dT%H:%M:%SZ  $ns  via $alias" > "handoffs/$ns/.last-sync"
 done
 

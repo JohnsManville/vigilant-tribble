@@ -1,24 +1,33 @@
 #!/bin/bash
-# sync-handoffs.sh — mirror this Mac's handoff files into the vigilant-tribble
+# sync-handoffs.sh — mirror the Macs' handoff files into the vigilant-tribble
 # repo so remote Claude sessions can read them without filesystem access.
 #
-# Run it ON EACH MAC that produces handoffs (MacBook Pro AND Mac mini).
-# Each machine writes into its own host-namespaced subtree
-# (handoffs/<short-hostname>/...), so the two Macs never clobber each other
-# and a consolidator can see both sets side by side.
+# DRIVER MODEL: run this ON THE MAC MINI (it has working GitHub write access
+# and can `ssh mbp`). It mirrors BOTH machines:
+#   - the mini's own ~/Claude + ~/ClaudeBox           -> handoffs/<mini-host>/
+#   - the MacBook Pro's, pulled over `ssh mbp`         -> handoffs/<mbp-host>/
+# The MacBook cannot push to the repo itself (deploy-key-only GitHub auth),
+# so everything is driven from the mini. Each host lands in its own namespace
+# so the two never clobber each other.
 #
 # Safe to run repeatedly; commits only on change.
 set -euo pipefail
 
 REPO="${HANDOFF_SYNC_REPO:-$HOME/Claude/.handoff-sync}"
 BRANCH="${HANDOFF_SYNC_BRANCH:-main}"
-HOST="$(scutil --get ComputerName 2>/dev/null || hostname -s)"
-HOST="$(echo "$HOST" | tr ' ' '-' | tr '[:upper:]' '[:lower:]')"
-DEST="handoffs/$HOST"
+
+# Remote Macs to also mirror, as "ssh-alias:namespace" pairs.
+# Default: the MacBook Pro via its `mbp` ssh alias.
+REMOTES=("${HANDOFF_SYNC_REMOTES:-mbp:jeffreys-macbook-pro}")
+
+host_slug() { echo "$1" | tr ' ' '-' | tr '[:upper:]' '[:lower:]'; }
+LOCAL_HOST="$(host_slug "$(scutil --get ComputerName 2>/dev/null || hostname -s)")"
+
+RSYNC_FILTER=(--include='*/' --include='*.md' --include='*.txt' --include='*.csv' --exclude='*')
 
 if [ ! -d "$REPO/.git" ]; then
   echo "error: $REPO is not a git clone of vigilant-tribble" >&2
-  echo "run: git clone https://github.com/JohnsManville/vigilant-tribble.git $REPO" >&2
+  echo "run: git clone git@github.com:JohnsManville/vigilant-tribble.git $REPO" >&2
   exit 1
 fi
 
@@ -27,31 +36,41 @@ git fetch origin "$BRANCH" 2>/dev/null || true
 git checkout -q "$BRANCH" 2>/dev/null || git checkout -qb "$BRANCH"
 git pull --ff-only origin "$BRANCH" 2>/dev/null || true
 
-# Text-only mirror: markdown + csv + txt. No PDFs, images, or scans.
-copytree() { # src  destsubdir
-  local src="$1" sub="$2"
-  [ -d "$src" ] || return 0
-  mkdir -p "$DEST/$sub"
-  rsync -a --delete --prune-empty-dirs \
-    --include='*/' --include='*.md' --include='*.txt' --include='*.csv' \
-    --exclude='*' "$src/" "$DEST/$sub/"
+# --- local (the mini) ---
+copy_local() { # src  destsubdir
+  [ -d "$1" ] || return 0
+  mkdir -p "handoffs/$LOCAL_HOST/$2"
+  rsync -a --delete --prune-empty-dirs "${RSYNC_FILTER[@]}" "$1/" "handoffs/$LOCAL_HOST/$2/"
 }
+copy_local "$HOME/Claude/Handoffs"      "Claude/Handoffs"
+copy_local "$HOME/ClaudeBox/handoffs"   "ClaudeBox/handoffs"
+copy_local "$HOME/Claude/Roswell/legal" "Claude/Roswell/legal"
+copy_local "$HOME/Claude/Roswell/build" "Claude/Roswell/build"
+date -u +"%Y-%m-%dT%H:%M:%SZ  $LOCAL_HOST  local" > "handoffs/$LOCAL_HOST/.last-sync"
 
-copytree "$HOME/Claude/Handoffs"        "Claude/Handoffs"
-copytree "$HOME/ClaudeBox/handoffs"     "ClaudeBox/handoffs"
-copytree "$HOME/Claude/Roswell/legal"   "Claude/Roswell/legal"
-copytree "$HOME/Claude/Roswell/build"   "Claude/Roswell/build"
-
-# stamp so a reader knows how fresh each host's mirror is
-date -u +"%Y-%m-%dT%H:%M:%SZ  $HOST  $(whoami)@$(hostname)" > "$DEST/.last-sync"
+# --- remotes (the MacBook Pro over ssh) ---
+for pair in "${REMOTES[@]}"; do
+  alias="${pair%%:*}"; ns="${pair##*:}"
+  ssh -o BatchMode=yes -o ConnectTimeout=8 "$alias" 'true' 2>/dev/null || { echo "skip $ns ($alias unreachable)"; continue; }
+  copy_remote() { # remote-src  destsubdir
+    ssh -o BatchMode=yes "$alias" "test -d $1" 2>/dev/null || return 0
+    mkdir -p "handoffs/$ns/$2"
+    rsync -a --delete --prune-empty-dirs -e 'ssh -o BatchMode=yes' "${RSYNC_FILTER[@]}" "$alias:$1/" "handoffs/$ns/$2/"
+  }
+  copy_remote '~/Claude/Handoffs'      "Claude/Handoffs"
+  copy_remote '~/ClaudeBox/handoffs'   "ClaudeBox/handoffs"
+  copy_remote '~/Claude/Roswell/legal' "Claude/Roswell/legal"
+  copy_remote '~/Claude/Roswell/build' "Claude/Roswell/build"
+  date -u +"%Y-%m-%dT%H:%M:%SZ  $ns  via $alias" > "handoffs/$ns/.last-sync"
+done
 
 if git status --porcelain | grep -q .; then
   git add -A
-  git commit -qm "handoff sync: $HOST $(date '+%Y-%m-%d %H:%M')"
+  git commit -qm "handoff sync $(date '+%Y-%m-%d %H:%M') from $LOCAL_HOST"
   git push -q origin "$BRANCH"
-  echo "synced $DEST and pushed"
+  echo "synced and pushed"
 else
-  echo "no changes for $HOST"
+  echo "no changes"
 fi
 
 # --- launchd template (save as ~/Library/LaunchAgents/com.jeff.handoff-sync.plist,
@@ -62,8 +81,7 @@ fi
 # <plist version="1.0"><dict>
 #   <key>Label</key><string>com.jeff.handoff-sync</string>
 #   <key>ProgramArguments</key><array>
-#     <string>/bin/bash</string>
-#     <string>-lc</string>
+#     <string>/bin/bash</string><string>-lc</string>
 #     <string>$HOME/Claude/.handoff-sync/bin/sync-handoffs.sh</string>
 #   </array>
 #   <key>StartInterval</key><integer>1800</integer>

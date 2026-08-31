@@ -29,6 +29,12 @@ Because both machines have same-named handoff folders with *different*
 contents, the sync writes each machine into its own namespace:
 `handoffs/<short-hostname>/...`. Nothing collides; a consolidator reads both.
 
+**Driver model:** the sync runs on the **Mac mini only**, which mirrors both
+its own files and the MacBook Pro's (pulled over `ssh mbp`). The MacBook Pro
+cannot push to this repo itself — its GitHub auth is a deploy-key-only setup —
+so everything is driven from the mini, which has working GitHub write access.
+Configure extra remotes with `HANDOFF_SYNC_REMOTES="alias:namespace ..."`.
+
 ## Layout
 
 ```

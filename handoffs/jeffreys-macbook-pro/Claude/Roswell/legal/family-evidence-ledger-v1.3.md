@@ -252,3 +252,29 @@ Request-patterned messages ("can/could/would you," "any chance," "can I borrow,"
 | **Total, four threads** | **501** | **169** | |
 
 Method notes: regex pattern-match on decoded chat.db text; approximate (some false positives both directions, so the 3:1 RATIO is more robust than any single count); group-thread "them" includes asks addressed to Laura as well as Jeff; implicit asks ("I need...", "we're looking for...") are NOT counted, so the true totals are higher. Headline: five hundred and one documented asks pointed at Jeff's phone from four threads alone, three asked of him for every one he asked back.
+
+### 12.11 🔴 CORRECTION: the tenancy was never formally ended (per Jeff, 2026-08-31)
+
+Every prior document in this project, including handoffs RC/v1.1/v1.2, the timeline, the objection analysis, and the bibliography, says "Jeff and Laura cancelled/ended her tenancy Aug 4-6, 2026." **Jeff states that is wrong: he never officially ended her tenancy.** What happened Aug 4-6 was that he and Laura told her they were done. No formal notice of termination was served.
+
+**Why this matters, three ways:**
+1. **The letter.** v2.62 now reads "That's why Laura and I told you we were done," not "ended the tenancy." A letter going to Nancy first and Dale second must not assert a legal act that never occurred.
+2. **Landlord-tenant exposure.** Oregon has strict written-notice requirements. Claiming in writing that a tenancy was terminated, when no notice was served, is worse than saying nothing: it can look like an attempted termination without process. Any occupancy question should go to Jeff's own attorney before another document repeats it.
+3. **The negotiation.** Dale's terms are built around Nancy vacating and keeping access through Mar 1, 2027. Her occupancy status therefore rests on the deed-back agreement, not on any termination. Do not argue from a termination that does not exist.
+
+**Action for the next session:** treat "tenancy ended Aug 4-6" as retracted everywhere it appears. If a document needs the fact, the accurate version is: *Aug 4-6, 2026, Jeff and Laura told Nancy the arrangement was over; no formal termination notice was served; Nancy has since decided to vacate.*
+
+### 12.12 🔴 CORRECTION SUPERSEDING 12.11: NANCY ended the tenancy (per Jeff, 2026-08-31)
+
+12.11 said the tenancy was never formally ended by Jeff and Laura. Jeff then clarified further, and this is the operative version:
+
+**Nancy terminated the tenancy. Jeff and Laura did not. They never told her to go and never told her they were done.** She chose to leave.
+
+This is the single most consequential factual correction in the project, and it runs in Jeff's favor:
+1. **No landlord-termination exposure at all.** There was no notice because there was no termination by the owners. Prior documents saying "Jeff and Laura cancelled her tenancy Aug 4-6" are wrong in a way that invented liability that does not exist.
+2. **The narrative flips.** The sequence is: Patrick receives the POA (Jul 26) → Nancy ends her own tenancy → Dale's letterhead arrives (Aug 11). The owners did not evict a sick woman; the tenant left and then sent a lawyer.
+3. **It strengthens the negotiation.** Dale's terms give her access through Mar 1, 2027 and escrowed payments as though accommodating a displacement the owners caused. She caused it.
+
+**Retract everywhere:** "Jeff and Laura cancelled/ended the tenancy Aug 4-6, 2026" appears in handoffs RC, v1.1, v1.2, the timeline of horror, the objection scenario analysis, and the bibliography. All wrong. Accurate version for every future document: *Nancy ended the tenancy herself in early August 2026 and chose to vacate; Jeff and Laura neither terminated it nor asked her to leave.*
+
+Letter v2.65 now states it plainly: "you ended the tenancy, Mom. Not us. We never told you to go. We never said we were done."

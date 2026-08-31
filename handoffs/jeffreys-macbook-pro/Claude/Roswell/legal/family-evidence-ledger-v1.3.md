@@ -311,3 +311,44 @@ Sourcing behind those two sentences: the Apr 29-30, 2025 hospital relay ("Thanks
 Rationale: that paragraph is the single most quotable passage in the letter and the most likely to circulate. Naming Kari without shielding her exposed a person with no part in the dispute to the family's reading. The carve-out keeps Nancy's quote and the charge against Nancy fully intact while moving Kari out of the blast radius.
 
 **Carve-out roster as of v2.66 / v1.2 / v3.3:** Tracy (earned it, and the reason is stated), Terry (clean hands, eleven years), Kari (no part in it). Nobody else is carved out.
+
+### 12.15 Nancy communication sweep, email and text (2026-08-31)
+
+Run at Jeff's request. Sources: Gmail (mumford.nancy@gmail.com) and iMessage chat.db, handle +1 (503) 333-0720.
+
+**Volume.** 10,650 iMessages with Nancy, 2014-09-27 through 2026-08-28. Per year: 2014:40, 2015:273, 2016:280, 2017:259, 2018:470, 2019:471, 2020:1314, 2021:1172, 2022:1134, 2023:896, 2024:1062, **2025:1714, 2026:1565**.
+
+2026 by month, Nancy / Jeff: Jan 144/105, Feb 80/61, Mar 122/81, Apr 130/141, May 121/167, Jun 107/131, **Jul 66/67, Aug 22/20**. The collapse is visible in the record: August is one seventh of a normal month.
+
+**MATERIAL CORRECTION to the call-log paragraph.** The letter says of the July 20 missed calls: "that was the last time we ever talked." That is true of *phone calls*. It is not true of contact. **Texting continued after July 20 and Nancy's messages run through August 19.** Any version of that sentence that survives needs to say phone calls, or it hands Dale an easy "he says we never spoke again, here are four weeks of texts."
+
+**Nancy's last email to Jeff: July 7, 2026** (Gmail thread `19f2e2ed24127749`), replying to Laura's family letter: *"Loving words and wise decisions for you taking good care of yourselves. And I need that pic for my fridge!"* Only one Nancy email thread exists in the last 120 days. Email was not the channel; text was.
+
+**"With bells on" is now sourced to a date that matters.** Nancy, **July 28, 2026, 4:28pm**, confirming she would pick up John and Lucy: *"Will be there w bells on!"* That is eight days after the last phone call, two days after Patrick told Jeff about the POA, and **fourteen days before Dale's letterhead arrived.** The letter's love close quotes this line. It is stronger, not weaker, for the date.
+
+**The Patrick installation, contemporaneously documented, July 18-20.** Nancy's own texts: *"This was inside the house, we need to get this cashed. Where are you Patrick and I are at the house right now?"* / *"Is there a lawnmower with gas at the yellow house?"* / *"Patrick is getting into his work clothes and we will head over to Ace and get him work gloves."* / *"Pulling weeds at the house right now"* / *"Can you bring over your laptop and show Patrick the cool stuff you have on it for the house"* / *"We are done here now and will leave the check in the little drawer of the desk by the window."* Patrick was working on and being oriented to Roswell in the same week the POA moved.
+
+**Nancy's last substantive text: August 18, 2026** — ordinary, warm, asking after Jeff's blood pressure and sending regards. Her last message of any kind is August 19, 11:44pm (attachment only). She sent nothing after Dale's August 11 letter that acknowledges it.
+
+**EXPOSURE, flagged plainly. Jeff's own texts of August 28, 2026** are the last messages in the thread and they are hot. They include *"I'm not sure I wanna talk to you again"* and *"I don't suppose I need to worry about showing you the consequences of your actions. God can sort it just fine for you,"* alongside a characterization of Laura written in anger. These are discoverable, they postdate Dale's letter, and they are the single worst-looking thing in an otherwise clean communication record. Any counsel reviewing this file will find them. They also complicate the letter's posture, since the letter presents Jeff as still reaching and asks for one conversation. **Decide deliberately how to handle this before the letter goes.** Options: acknowledge it in the letter in one line, or say nothing and be ready for it to be quoted back.
+
+**What the sweep did not find.** No email or text from Nancy referencing the POA transfer, the tenancy, Dale, the deed back, or the August 11 letter. She never raised any of it with Jeff directly in either channel. Everything substantive came through her attorney.
+
+### 12.16 Call log fact check, and two errors found (2026-08-31)
+
+Jeff called the call-log paragraph wrong. He was right. Verified directly against `~/Library/Application Support/CallHistoryDB/CallHistory.storedata`, ZCALLRECORD, Nancy's number 503-333-0720, timestamps converted to local. Retained window in the database is 2025-06-28 to 2026-08-31, so nothing before late June 2025 exists to check.
+
+**Verified correct:**
+- **38 calls between June 9 and July 20, 2026.** Exactly 38 records. Correct.
+- **21 minutes on the 15th.** July 15, 12:12pm, outgoing, 1,273 seconds, 21m13s. Correct.
+- **Three calls before midnight on the 24th.** June 24 at 10:55pm, 11:34pm, 11:48pm, all outgoing. Correct.
+- **18 minutes at 9:38 at night on the 19th.** July 19, 9:38pm, outgoing, 1,087 seconds, 18m07s. Correct.
+- **She called twice on the 20th and both were missed.** July 20, 12:49pm and 1:30pm, both incoming, both 0 seconds. Correct.
+
+**ERROR 1: "30 of those calls I dialed" is wrong. Jeff dialed 25.** Of the 38, Jeff placed 25 and Nancy placed 13. **30 is the number of calls that connected** (duration greater than zero). An earlier session conflated the connected count with the dialed count. The true figure is still lopsided and still makes the point: he placed roughly two of every three calls in the last six weeks of contact.
+
+**ERROR 2: "that was the last time we ever spoke on the phone" is wrong.** Three outgoing calls were placed to Nancy on **August 28, 2026** at 4:47pm (10s), 4:48pm (3s), and 4:48pm (72s). None shows as answered, and the 72 second call may be voicemail, but calls exist after July 20. The defensible wording is that July 20 was the last real conversation. Fixed in `letter-to-mom-v3.6.md`.
+
+**Context worth noting:** those three August 28 calls are the same afternoon as the hot text messages in 12.15, minutes apart. Anyone reading the record sees the calls and the texts together. If the letter says "I called you three more times on August 28 and you didn't pick up," it invites her straight to those texts.
+
+**Broader lesson for this project:** every number in the letter that came from a prior session and was not re-derived from a primary this week should be treated as unverified until it is. The 38, the four specific calls, and the ask count have now been checked. The 86 documented working days and the ask count method have not been re-derived this session.

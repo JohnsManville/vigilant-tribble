@@ -238,3 +238,17 @@ Dump on disk: `~/Claude/Family/_julie_thread.txt`.
 When the mold was discovered and Jeff asked, Nancy said she had no idea about it. During pack-out, Jeff found DampRid throughout the house. Jeff's conclusion: she knew about the moisture and never disclosed it. Now in letter v2.2.
 
 **🔴 Two-edged:** against Nancy this shows concealment. But claim 059560682-01 is still live and the scope of loss is still being pursued. If Safeco ever hears "occupant knew about long-standing moisture and said nothing," that invites neglect/late-notice defenses against the claim itself. Keep the DampRid passage inside the truth copy only; it must not reach anything that could circulate to the carrier while the claim is open.
+
+### 12.10 The ask count (2026-08-31, chat.db pattern analysis)
+
+Request-patterned messages ("can/could/would you," "any chance," "can I borrow," "mind if," "help me/us," "are you free/available," etc.), counted per thread, both directions, full history:
+
+| Thread | Asks FROM them | Asks FROM Jeff | Span |
+|---|---:|---:|---|
+| Nancy (direct) | 129 | 55 | 2014-2026 |
+| Julie (direct) | 75 | 32 | 2015-2026 |
+| Tracy (direct) | 24 | 18 | 2015-2026 |
+| The Greggfords (group) | 273 | 64 | 2018-2025 |
+| **Total, four threads** | **501** | **169** | |
+
+Method notes: regex pattern-match on decoded chat.db text; approximate (some false positives both directions, so the 3:1 RATIO is more robust than any single count); group-thread "them" includes asks addressed to Laura as well as Jeff; implicit asks ("I need...", "we're looking for...") are NOT counted, so the true totals are higher. Headline: five hundred and one documented asks pointed at Jeff's phone from four threads alone, three asked of him for every one he asked back.

@@ -352,3 +352,24 @@ Jeff called the call-log paragraph wrong. He was right. Verified directly agains
 **Context worth noting:** those three August 28 calls are the same afternoon as the hot text messages in 12.15, minutes apart. Anyone reading the record sees the calls and the texts together. If the letter says "I called you three more times on August 28 and you didn't pick up," it invites her straight to those texts.
 
 **Broader lesson for this project:** every number in the letter that came from a prior session and was not re-derived from a primary this week should be treated as unverified until it is. The 38, the four specific calls, and the ask count have now been checked. The 86 documented working days and the ask count method have not been re-derived this session.
+
+### 12.17 Mortgage figures corrected against the primary (2026-08-31)
+
+Jeff caught it: **the $2,246.17 CMG payment in the FinRecon ledger is the Malcolm mortgage, not Roswell.** Malcolm is the family home at 2908 SE Malcolm St. The Roswell payment does not appear in Jeff's accounts at all, because Nancy has been paying it from hers. CMG services both loans, which is how the two got conflated.
+
+Corrected from **Elliott Dale's August 11, 2026 letter**, read directly from the scanned PDF (page 2 required rendering to PNG; the file has no text layer):
+
+- **Roswell mortgage: approximately $1,911 per month, and that figure includes property taxes and insurance.** Paid to CMG Mortgage.
+- **Twelve months, approximately $24,000**, deposited with a title company or independent Oregon escrow company, disbursed monthly straight to the lender.
+- **Escrow begins September 1, 2026, or as soon as practical.** The Aug 11 letter does state a start date. The open question is whether the Aug 30 revision restates it.
+- **Quitclaim deed**, not bargain and sale, held in escrow, recorded at the end of the twelve-month escrow period. Nancy specifically wants her interest to go to Jeffrey and Laura jointly.
+- **Utilities:** water, sewer, garbage, electric through Dec 31, 2026. From Jan 1, 2027 her name comes off all property accounts and the costs are Jeff and Laura's.
+- **Personal property through March 1, 2027**, including a 10' x 20' Dry Box storage container alongside the house. She asks that nothing of hers be moved off-site or disposed of before then.
+- **Response demanded in writing by August 24, 2026.** If no response, she proceeds anyway: signs the quitclaim, sets up escrow, and **shuts off utilities at the end of the year.** That deadline has passed with no substantive response from Jeff.
+- **Her letter already concedes the note point.** It states the loan remains a legal obligation of both Nancy and Jeffrey until refinanced or paid off. Counter-proposal v1.1 §3.2 argues for something they have already given.
+- **Nancy has not lived in the house since June 2025 and was in a care facility until December 2025**, per her own attorney's letter. Directly relevant to the Medicaid look-back analysis, and it is her side's own written record.
+- Patrick Todd is cc'd as "Power of Attorney for Nancy Mumford (real estate matters)."
+
+**What this changes:** every dollar figure in the earlier path analysis was built on $2,246.17 and was wrong. Six escrowed months is **~$11,500**, not $13,477. Twelve is **~$24,000**, not $26,954. The gap the Aug 30 revision created is **~$11,500**, not $13,477. The artifact for Laura has been rebuilt on the corrected numbers. The counter-proposal v2.0 stated no per-month figure, so it is unaffected.
+
+**Method note that should have been applied earlier:** the payment figure was taken from a bank ledger without confirming which property it belonged to. The primary document was on disk the whole time. Read the primary first.

@@ -1,6 +1,6 @@
 # Decisions — state
 
-_Updated 2026-08-31 02:57:59. Answered via `decide`. Open items are what Claude should ask about next._
+_Updated 2026-08-31 03:33:20. Answered via `decide`. Open items are what Claude should ask about next._
 
 ## Answered
 
@@ -18,3 +18,10 @@ _Updated 2026-08-31 02:57:59. Answered via `decide`. Open items are what Claude 
 - **repo-remotes** — Give campingteam-site, imsg and Sea Ray Trainer GitHub remotes? (recommend: YES)
 - **estimator-mapping** — Walk the 54-row site-to-customer mapping together so the estimator import works? (recommend: YES)
 - **cash-worksheet** — Walk the cash worksheet payee naming together (162 rows, $45,741)? (recommend: YES)
+- **s-2bd1e4e0** — Hand over your admin password so remote-access hardening (auto-login, ARD, AnyDesk, SSH) can be locked down? (recommend: YES)
+- **s-2d8ae985** — Pay the overdue bills from tonight's sweep now? (recommend: YES)
+- **s-5a07de1d** — Resume the iMessage export by downloading the held iCloud attachments? (recommend: YES)
+- **s-cowork-undated** — Open the 12 unreadable Cowork sessions in the desktop app and confirm their state by hand? (recommend: YES)
+- **s-d3be74ae** — Export the complete Bitsies tech-pack (support.js + assets/ + uploads/) for the Code Builder? (recommend: YES)
+- **s-45e1c5ce** — Make the cloud-brief lane local-only permanent, with no Google Drive lane on the Mini? (recommend: YES)
+- **s-8c67e6c8** — Reseat the 2TB ClaudeData drive on Thunderbolt so offload stops being single-copy? (recommend: YES)

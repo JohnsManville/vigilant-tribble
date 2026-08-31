@@ -60,6 +60,14 @@ if [ -d "$HOME/.claude" ]; then
     "$HOME/.claude/" "handoffs/$LOCAL_HOST/ClaudeCode/dot-claude/"
 fi
 
+# Scattered Claude Code project handoffs under ~/ClaudeBox (outside the synced handoffs/ dir).
+SCATTER_FIND='find ClaudeBox \( -path ClaudeBox/handoffs -o -path "*/_account-transition-export*" -o -name .git \) -prune -o -type f \( -iname "HANDOFF*.md" -o -iname "*STATE*.md" \) -print'
+if [ -d "$HOME/ClaudeBox" ]; then
+  mkdir -p "handoffs/$LOCAL_HOST/ClaudeCode/scattered"
+  ( cd "$HOME" && eval "$SCATTER_FIND" 2>/dev/null ) \
+    | rsync -a --files-from=- "$HOME/" "handoffs/$LOCAL_HOST/ClaudeCode/scattered/" 2>/dev/null || true
+fi
+
 date -u +"%Y-%m-%dT%H:%M:%SZ  $LOCAL_HOST  local" > "handoffs/$LOCAL_HOST/.last-sync"
 
 # --- remotes (the MacBook Pro over ssh) ---
@@ -79,6 +87,11 @@ for pair in "${REMOTES[@]}"; do
     mkdir -p "handoffs/$ns/ClaudeCode/dot-claude"
     rsync -a --delete --prune-empty-dirs -e 'ssh -o BatchMode=yes' "${CC_PRUNE[@]}" "${RSYNC_FILTER[@]}" \
       "$alias:~/.claude/" "handoffs/$ns/ClaudeCode/dot-claude/"
+  fi
+  if ssh -o BatchMode=yes "$alias" 'test -d ~/ClaudeBox' 2>/dev/null; then
+    mkdir -p "handoffs/$ns/ClaudeCode/scattered"
+    ssh -o BatchMode=yes "$alias" "cd ~ && $SCATTER_FIND" 2>/dev/null \
+      | rsync -a --files-from=- -e 'ssh -o BatchMode=yes' "$alias:" "handoffs/$ns/ClaudeCode/scattered/" 2>/dev/null || true
   fi
   date -u +"%Y-%m-%dT%H:%M:%SZ  $ns  via $alias" > "handoffs/$ns/.last-sync"
 done

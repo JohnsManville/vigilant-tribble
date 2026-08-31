@@ -278,3 +278,36 @@ This is the single most consequential factual correction in the project, and it 
 **Retract everywhere:** "Jeff and Laura cancelled/ended the tenancy Aug 4-6, 2026" appears in handoffs RC, v1.1, v1.2, the timeline of horror, the objection scenario analysis, and the bibliography. All wrong. Accurate version for every future document: *Nancy ended the tenancy herself in early August 2026 and chose to vacate; Jeff and Laura neither terminated it nor asked her to leave.*
 
 Letter v2.65 now states it plainly: "you ended the tenancy, Mom. Not us. We never told you to go. We never said we were done."
+
+### 12.13 Terry Chasteen mine (2026-08-31)
+
+Aunt Terry, Nancy's sister (Todd side, Minneapolis). iMessage +1-425-350-8678: 474 msgs 2014-2025, decoded dump at `~/Claude/Family/_terry_thread.txt`. Email tchasteen2@comcast.net, ~200 Gmail threads. Full write-up delivered as chat card.
+
+**Headline findings:**
+1. **May 6, 2025, five weeks before the mold loss.** Jeff: "Mind doing something unpleasant?" / "Medical directive" / "Estate planning" / "Financials" / "I can absolutely help but she's so ashamed" / "if you had a magic wand, snap her out of the denial that things will always workout if you ignore them long enough." Terry: "Yup," "Yup," "I get it." **Nancy's own sister corroborating Jeff's read of her, in writing, before the crisis.** This is the strongest third-party support for the letter's directives/estate paragraph.
+2. **Apr 29-30, 2025 hospitalization.** Jeff relayed every update to Terry in real time. Terry: "Thanks so much for being there for her." Nancy's own note, forwarded by Terry: "Jeff was also there with me all day." Independent confirmation of the letter's "I was in the room for it."
+3. **The 2020 Julie crisis, from Terry's side.** Jeff's Mar 9, 2020 "Fun In Florida!" email (Gmail `170be1443bfcd06c`) with her replies offering "3 wks or untill the nanny shows up." Documents "we flew Terry out."
+4. **"Anytime anywhere" sourced.** Nancy, Sept 30, 2023, Julie's "Kid Help weekend of 10/14" thread (Gmail `18ae8231b5d90e76`): "Me three! Would love to help out! Anytime anywhere just let me know. Grandma." Same thread contains Jeff's "I'd be delight to help/host/whatever."
+5. **Jeff housed Terry and Jim at a client's house (Anne's) during the crisis**, arranged cleaning, managed the thank-you. Not in the letter.
+6. **Even mid-crisis the fixer role held:** Terry, same morning as the estate conversation, asked him to reattach a towel rack before the owner returned. He said yes.
+7. **Nothing hostile in eleven years.** No ownership-story talk, no Roswell dispute, no mention of the POA transfer or mediation. Terry is not in the rupture.
+
+**Open question for Jeff:** the letter's "everyone BUT my blood family" line currently sweeps Terry in. On this record she has clean hands, like Tracy. Decide deliberately whether she gets a carve-out, because she will hear about the letter.
+
+### 12.14 Carve-outs approved: Terry and Kari (2026-08-31)
+
+Jeff resolved the open question in 12.13 and added a second one.
+
+**Terry Chasteen: carve-out approved.** The letter now names her alongside Tracy as someone it is not aimed at. Text added after the Tracy paragraph in truth copy v2.66, SEND-COPY v1.2, and landing version v3.3:
+
+> "And Terry. Eleven years of texts with your sister and not one hard word in any of them. She thanked me for sitting with you in the hospital. She came to me when your move needed coordinating. She has been steady with you and steady with me the whole time, and she has never once been part of what this letter is about. Neither of them is. If this ever gets read by anyone besides you, I want that in writing."
+
+Sourcing behind those two sentences: the Apr 29-30, 2025 hospital relay ("Thanks so much for being there for her") and the Jun 27, 2020 move-coordination exchange where Terry asked Jeff for the Roswell address. Both in `_terry_thread.txt`. The May 6, 2025 estate/directives exchange was deliberately NOT used in the carve-out; conscripting her as a witness in a letter to her own sister would undo the protection the carve-out exists to give. It stays available in 12.13 if the paragraph is ever challenged.
+
+**Kari: carve-out approved.** In the polyamory/Susan-bigotry paragraph (truth copy and send copy only; the paragraph is cut from the landing version), Kari was named but unprotected. Added:
+
+> "And let me be clear about one thing, because she never asked to be anywhere near this. None of that is Kari's. She has been good to me, good about my family, and she has never asked me for a single thing. She does not deserve to be a footnote in a fight she had no part in. What you said, you said about me. It stays there."
+
+Rationale: that paragraph is the single most quotable passage in the letter and the most likely to circulate. Naming Kari without shielding her exposed a person with no part in the dispute to the family's reading. The carve-out keeps Nancy's quote and the charge against Nancy fully intact while moving Kari out of the blast radius.
+
+**Carve-out roster as of v2.66 / v1.2 / v3.3:** Tracy (earned it, and the reason is stated), Terry (clean hands, eleven years), Kari (no part in it). Nobody else is carved out.

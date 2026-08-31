@@ -194,3 +194,41 @@ Threads: "The Greggfords - 107.txt" (Jeff+Laura+Diana+Stacy, 2018 to Sep 20, 202
 **Timeline texture:** the GROUP thread stays warm all summer 2025 (the Jeff-Diana rupture lived in the direct thread, not here). Message volume tells the arc anyway: 2,515 msgs in 2020, 1,921 in 2021, then 1,010 / 674 / 604 / 518, and the 7-year thread dies Sep 20, 2025. The successor thread is mostly Minecraft logistics between the kids, then Nov 13, 2025 Diana sharing the DMV story ("mom ALREADY HAD a real ID"), last message Mar 29, 2026. Diana was still running Nancy's errands (DMV, car, handicap pass) in Aug-Nov 2025.
 
 **Ledger cross-hit:** Jul 26, 2025, Jeff: "I need to move Mom's car so we can drop a storage container in her driveway" — pins the pack-out container delivery date at Roswell to Jul 26, 2025. Relevant to open item 10 (Dry Box storage supplement).
+
+### 12.6 Greggs free-work pricing (letter support, conservative, Odd Jobs rate sheet)
+
+| Item | Date | Billed-equivalent |
+|---|---|---:|
+| MN trip at Hollis's birth: flight, multi-day help, bathroom repair | 2018 | ~$2,304 (3 days x 6 hr x $128) + airfare |
+| Toilet clog + new wax seal | Jun 9, 2025 | $447 (3 hr @ $149 drain rate) |
+| Washer/dryer move | 2020 | $256 (2-hr min) |
+| Move-in help | 2021 | ~$512 (half day) |
+| Water filter install | 2021 | $256 (2-hr min) |
+| Dimmer install | 2020 | $256 (2-hr min) |
+| 29th derelict-property advocacy (letters, city follow-up) | multi-year | ~$512 (4 hr) |
+| Minneapolis Christmas drive (Tracy home, ~3,400 mi RT) | Dec | ~$4,096 (4 days x 8 hr x $128) + fuel |
+| **Documented total, conservative** | | **~$8,600+** |
+
+Unpriced on purpose: truck/trailer/tool lending over a decade (rental equivalent $75-100/day per loan), and childcare, which ran both directions and is owned as mutual in the letter. Letter v1.22 uses "north of eight grand," which this table supports.
+
+### 12.7 Tracy mine (chat.db direct thread, 4,171 msgs 2014-2026, + Gmail)
+
+Dump on disk: `~/Claude/Family/_tracy_thread.txt`.
+
+- **Hog Wild ownership confirmed in Tracy's words**, Feb 14, 2018: "it's kind of weird that it's about you being 'named' president and CEO, when you actually bought it." Jeff: "as opposed to Private Equity owners, it's back to owner/operator." Jeff BOUGHT Hog Wild; the letter's "when I had position there" undersells it.
+- **Jeff gave Tracy paid work**: Hog Wild catalog copy, presentations, Toy Fair NYC trips with airfare Jeff approved ("600 isn't outrageous. Book it!"), 2015-2020.
+- **Message volume spike: 1,086 msgs in 2025** (vs 43-81 in 2021-2023). Tracy leaned IN during the crisis year.
+- **June 2025, Nancy's hospitalization**: Tracy came to Portland, visited the hospital daily; Jeff housed her and Blake at a client's house (Anne's), lent TVs, gear, arranged everything while his own life burned.
+- **⚠️ Nuance the letter must survive**: Jun 17, 2025, Jeff to Tracy: "I know I can trust you with the deepest, darkest parts of my soul but it would help to have you confirm you understand and will respect my wishes to navigate some of these issues alone." Tracy: "we may just keep offering unless you say the offers aren't helpful." Tracy DID offer support, repeatedly, in writing, and Jeff asked for room. "Nobody wrapped around me" is contestable if Tracy is included in "nobody." Recommend the letter carve Tracy out or address it.
+- Jun 12, 2025 Jeff on Julie: "she doesn't have the right to make herself feel better by making others feel worse." Tracy: "I love you a lot — and I know it's been hard."
+- **Current**: Tracy in Portland Aug 29-31, 2026; texted Aug 30 asking Jeff to breakfast (his phone showed satellite-only).
+
+### 12.8 Julie mine (chat.db direct thread, 7,394 msgs 2014-2026; Gmail already swept)
+
+Dump on disk: `~/Claude/Family/_julie_thread.txt`.
+
+- **Jul 16, 2015, Julie in writing**: "As I'm helping Mom sort through her finances, should I plan for her to repay the money that you and Laura supported her this winter and spring?" — documents Jeff+Laura financially carrying Nancy in 2015, five years before the house, acknowledged by Julie.
+- **Jeff's work for Julie, documented across a decade**: 2015 punch list in-thread (kitchen trap, pedestal sink, full-size toilet, light fixtures); 2016 appliance install + haul-off, fence/yard cleanup, Adeline's room setup; 2017 hosted the girls during lead-paint scraping; 2018 leaky dishwasher, water-heater guidance; 2019 arranged flooring installer, radiant-heat consult, "I'd be delighted!" (May 18, 2019); Dec 2019 picked Mom up, grab-bar coordination; 2020 sauna build supervision, climbing-wall offer, drain calls.
+- **Feb 11, 2026**: Julie and Jeff coordinating Mom's hospital release together, warm and functional. Last direct thread activity May 31, 2026 (cordial). Thread silent since, POA moved to Patrick Jul 26.
+- **Gmail (surfaced via Tracy sweep)**: Julie held Nancy's POA (finalized Jun 19, 2025, transferred away Jul 26, 2026); Julie ran the will/estate signing (Feb 2026), beneficiary forms (Oct 2025), Moda cards (Nov 2025), assisted-living search (Jul 2025). The Julie-2020-crisis emails EXIST on paper: Jeff's Mar 9, 2020 "Fun In Florida!" thread with Terry Chasteen (nanny concerns, "should we let her be with the kids as scheduled?") and Tracy's Mar 31, 2020 "Getting increasingly desperate sense of things at Julie's house." The letter's "the WHOLE family agreed, out loud, on email" claim is now paper-backed.
+- **⚠️ Context the letter must survive**: summer 2025 the family WAS mobilized, on Nancy's cancer and care logistics (MorningStar, POA, chemo scheduling, assisted-living tours, 529s Nancy opened Jun 4, 2025). Her attorney's version of that summer is "everyone was drowning in Mom's illness." The letter's complaint is about support for JEFF (the unsafe story, Laura's treatment, the mold), which is distinct, but v2.0 should not phrase it in a way that erases the Mom-care mobilization. Health details themselves stay OUT of anything that circulates, per the recording-evidence note's standing flag.

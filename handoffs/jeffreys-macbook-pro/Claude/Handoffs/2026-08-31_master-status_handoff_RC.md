@@ -18,7 +18,7 @@ Status key: **not started / in progress / blocked (on Jeff or external) / done**
 | 1 | Roswell — property transfer negotiation (Nancy / Dale) | in progress (counsel engaged; reply drafted, unsent) | 2026-08-31 |
 | 2 | Roswell — insurance claim (Safeco / CMG) | in progress | 2026-08-31 |
 | 3 | Roswell — build / finish & occupy (incl. electrical) | blocked on Jeff decisions | 2026-08-31 |
-| 4 | Family letter to Nancy + evidence ledger | in progress (letter v1.19, ledger v1.2) | 2026-08-31 |
+| 4 | Family letter to Nancy + evidence ledger | in progress (letter v1.19, ledger v1.3) | 2026-08-31 |
 | 5 | Roswell FinRecon dataset load ("Deliverable G") | in progress (schema ready, data not loaded) | 2026-08-23 |
 | 6 | Fresno Family Timeline (confidential) | in progress / maintenance | 2026-08-31 |
 
@@ -65,7 +65,7 @@ Status key: **not started / in progress / blocked (on Jeff or external) / done**
 | 32 | Covenant intel dispute (135 MB on MacBook) | blocked (Kari's tiebreak) | 2026-08-23 |
 | 33 | `archives/` (~32 GB) backup gap on ClaudeData | blocked on Jeff | 2026-08-28 |
 | 34 | Three remoteless repos (campingteam / imsg / Sea Ray) | open (need GitHub remotes) | 2026-08-23 |
-| 35 | Handoff-sync mirror + end-of-day routine (this session) | in progress (repo built; sync not yet on Macs) | 2026-08-31 |
+| 35 | Handoff-sync mirror + end-of-day routine (this session) | in progress (mini-driven sync installed & running; 5pm routine set) | 2026-08-31 |
 
 ### Smaller / dormant
 | # | Thread | Status | Last activity |
@@ -469,7 +469,7 @@ The new 2 TB drive intended as the backup target does not enumerate (`diskutil l
 
 **Why it exists:** this consolidation was requested from a remote cloud session that could not see the Macs' filesystems; Google Drive had only stale partial copies. The mirror closes that gap (and fixes the E-106 gap from Thread 21 — there is no working Drive-based Handoffs sync).
 
-**Blocker:** the Routine reads the repo mirror, which is empty until `sync-handoffs.sh` runs on the Macs.
+**Status:** the mini-driven `sync-handoffs.sh` is installed (launchd, every 30 min) and mirroring all three surfaces; the 5pm Routine reads it. Residual: the Nov DST cron shift.
 
 **Phased plan**
 - **Phase 1:** Install the sync on both Macs — clone `vigilant-tribble` into `~/Claude/.handoff-sync`, run `bin/sync-handoffs.sh` once, load the 30-min launchd job (or bolt it onto the `session-handoff` skill). (Can be done now over the SSH bridge if Jeff approves modifying the Macs.)

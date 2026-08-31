@@ -2,6 +2,11 @@
 **Version:** v1.1 | **Date:** 2026-08-31 | **Supersedes:** RC (same date)
 **Status:** DRAFT for attorney review. Not for transmission by Jeff directly.
 **Posture:** Hard anchor. Three-option ladder plus accounting claim.
+**Correction 2026-08-31:** Sections 4.2, 5.1, 5.4 and the strategy note were
+re-stated to remove the $8,837.38 double-count — the CMG insurance receipt is
+no longer netted against Jeff's advances (it is Nancy's fronted insurance,
+accounted on her ledger). Advances now stated at $32,998.09 gross; the prior
+"$23,821.74 net" is retired. See `2026-08-31_double-count-resolution_RC.md`.
 
 **Changes from RC:** added Section 3 (loan and note status), Section 5
 (accounting and compensation, absorbing the finish allowance), and revised the
@@ -116,11 +121,15 @@ rebuild, carrying costs, and improvements; all insurance proceeds received by
 either party; all sums advanced by Nancy; and the finish allowance under
 Section 5.2.
 
-**4.2** My ledger currently identifies **$32,659.12** advanced against the
-property, against **$8,837.38** received from the CMG escrow disbursement.
-Supporting documentation is being assembled and the figure is subject to
-adjustment on completion. It does not yet include HVAC, carrying costs, or
-labor.
+**4.2** My ledger identifies **$32,998.09** advanced against the property
+(gross documented, corrected for a $546.93 duplicate and $885.90 of orders
+previously mis-tagged). The **$8,837.38** CMG escrow disbursement (check
+#00001432, received July 21, 2026) is **not netted against my advances.** It is
+the carrier's bathroom-scope payment; it matches to the dollar an $8,837.38
+advance Nancy made on October 2, 2025, and is accounted on her side of the
+ledger, not as a reduction of what I advanced. Documentation is assembled for
+the finish spend (appliances and cabinets, $12,868.76) and is being completed
+for the remainder. It does not yet include HVAC, carrying costs, or labor.
 
 **4.3** Nancy is asked to produce the same for any sums she claims to have
 advanced.
@@ -134,9 +143,10 @@ labor, while Nancy occupied it. The following is claimed.
 
 **5.1 Carrying and improvement costs advanced.** Sums I advanced for
 remediation, rebuild, materials, storage, utilities, taxes, insurance, and
-mortgage, net of insurance proceeds and net of the CMG escrow disbursement.
-Per Section 4.2, currently **$23,821.74** net, subject to adjustment and to
-the additions in 5.4.
+mortgage. Per Section 4.2, **$32,998.09** documented to date (gross), subject
+to adjustment and to the additions in 5.4. The CMG escrow disbursement is not
+netted here (see Section 4.2); insurance proceeds are reconciled separately in
+Section 6.
 
 **5.2 Finish allowance.** During the rebuild Nancy elected finishes above the
 scope and grade the insurance claim would fund, and agreed to pay the
@@ -156,7 +166,7 @@ project records, plus a general contractor's fee on the total project cost at
 prevailing rate.
 
 **5.4 Additional items to be quantified.** The following are known but not yet
-in the $32,659.12 figure and will be added to the accounting:
+in the $32,998.09 figure and will be added to the accounting:
 - Mini-split HVAC system installed for Nancy's comfort, approximately
   **$20,000**, dates and invoices to be confirmed.
 - Mortgage, tax, insurance, and utility payments I have carried.
@@ -270,15 +280,14 @@ are the cheapest thing in this document next to carrying two mortgages into
 You asked for every dollar accounted for, your time, and compensation. It is
 in there. Three things you need to know before it goes out.
 
-**Your documentation is 28 percent.** Your own substantiation file says
-$9,235.38 of $32,659.12 is backed by a receipt. Opposing counsel will ask, and
-72 percent of the claim currently has no paper. Missing items include $8,269
-in appliances, $4,599.76 in cabinets, and an $8,840 Mold Masters payment with
-no invoice on file. There is also an unresolved $546.93 double-entry that, if
-it is a duplicate, means the figure is overstated. Assert a number you cannot
-document and the credible parts get dragged down with it. The appliance and
-cabinet receipts are recoverable from Home Depot order history. That is the
-highest-value hour you can spend before this is sent.
+**Your documentation has moved up from 28 percent.** The old substantiation
+file put $9,235.38 on paper; that is now stale. The Home Depot order pull
+(2026-08-14) itemized the two big missing pieces — $8,269 in appliances (order
+H4017-567029) and $4,599.76 in cabinets (order H4017-565922), adding $12,868.76
+of documented spend. The remaining gaps are the **$8,840 Mold Masters payment
+(10/31/25) with no invoice** — recoverable in one email to Peter Gowans — and
+the $546.93 duplicate, already confirmed and to be removed. Assert only what is
+documented; the credible parts carry the claim.
 
 **The categories are not equally strong.** Ranked:
 

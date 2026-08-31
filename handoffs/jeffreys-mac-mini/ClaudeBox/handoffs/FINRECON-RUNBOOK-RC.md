@@ -253,6 +253,75 @@ ssh mini
 `Jeffreys-Mac-mini.local`. Peers: `jeffreys-macbook-pro` 100.122.41.121 ·
 `jeffreys-mac-mini` 100.115.69.54 · `iphone182` 100.104.37.85.
 
+### Reaching the FinRecon web UI — one URL from every device
+
+There is no tunnel anymore. Same URL from the MacBook, the iPhone, or the Mini itself:
+
+```
+http://100.115.69.54:8787
+```
+
+Tailnet-only bind (DECISIONS v1.32): reachable from Jeff's Tailscale devices, **not** from the
+LAN. `127.0.0.1:8787` on the Mini deliberately no longer answers. The UI has no auth — any
+tailnet device can read and edit the ledger (Jeff accepted this trade-off 2026-07-31).
+
+The server is LaunchAgent **`com.claudebox.finrecon-serve`** (KeepAlive + RunAtLoad) →
+`~/ClaudeBox/scripts/finrecon-serve` → `.venv/bin/finrecon serve --no-open --host
+100.115.69.54`. Log: `~/ClaudeBox/finrecon/serve.log`. Restart on the Mini:
+
+```bash
+launchctl kickstart -k gui/501/com.claudebox.finrecon-serve
+```
+
+### If FinRecon is unreachable — check in this order
+
+1. **Did the Mini sleep?** This was the real 2026-07-31 cause (E-059): someone clicked Apple
+   menu → Sleep during screen sharing; `sleep 0` does not block that, and `powernap 1` kept it
+   dozing with ~2-min DarkWakes afterward. Check **history**, not just settings:
+
+   ```bash
+   pmset -g log | grep -E 'Entering Sleep|Wake from' | tail -10
+   ```
+
+   A `caffeinate -s` assertion (`com.claudebox.keep-awake` LaunchAgent) holds off idle sleep but
+   **cannot** block an explicit Sleep click. The definitive fix — run once on the Mini in a GUI
+   session, needs Jeff's password — is:
+
+   ```bash
+   sudo pmset -a disablesleep 1 powernap 0
+   ```
+
+   **This was applied 2026-08-01** (see Standing facts below): `SleepDisabled 1`, `powernap 0`,
+   so the Mini can no longer sleep at all, even via an explicit Apple-menu Sleep click.
+
+2. **Is Tailscale up on BOTH machines?** Menu-bar icon on the MacBook; on the Mini,
+   `tailscale status` should list the MacBook. The server binds the Tailscale IP, so if Tailscale
+   is down at Mini login the bind fails — KeepAlive retries every 15s and recovers on its own once
+   Tailscale is up.
+
+3. **Is the server running on the Mini?**
+
+   ```bash
+   lsof -nP -iTCP:8787 -sTCP:LISTEN     # expect Python on 100.115.69.54:8787
+   tail ~/ClaudeBox/finrecon/serve.log
+   launchctl kickstart -k gui/501/com.claudebox.finrecon-serve   # restart
+   ```
+
+4. **Emergency fallback tunnel** (only if the direct bind is somehow broken). The old command
+   targeted localhost and is dead (E-061); the working form is:
+
+   ```bash
+   ssh -N -L 8787:100.115.69.54:8787 mini    # then http://127.0.0.1:8787 on the MacBook
+   ```
+
+Fastest actuator remains the Mini's Claude: *"FinRecon on :8787 is down"* — it knows this file.
+
+### Standing facts
+
+- Mini pmset: `sleep 0 disksleep 0 womp 1 standby 0 tcpkeepalive 1`, and as of **2026-08-01**
+  (Jeff ran the sudo command): **`SleepDisabled 1`, `powernap 0`** — the Mini can no longer sleep
+  at all, even via an explicit Apple-menu Sleep click.
+
 ### ✅ RESOLVED 2026-08-12 — the Mac mini is authoritative
 
 Jeff's decision. The Mini is the system of record; the MacBook Pro copy is a **read-only

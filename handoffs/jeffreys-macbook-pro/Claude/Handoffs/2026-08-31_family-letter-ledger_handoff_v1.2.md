@@ -94,3 +94,14 @@ Operative sequence: Patrick receives the POA Jul 26, 2026 → Nancy ends her own
 Consequences: no landlord-termination exposure exists; the narrative is a tenant who left and then sent a lawyer, not owners who evicted a sick woman; and Dale's terms (access through Mar 1, escrowed payments) are framed around a displacement the owners did not cause. Full reasoning in evidence ledger v1.3 section 12.12, which supersedes 12.11.
 
 Letter is now truth copy **v2.65**, send copy matched.
+
+## ADDENDUM 3, supersedes every holdback instruction above
+
+**Jeff's decision, 2026-08-31: NO REDACTION. One letter, not two.** His reasoning, verbatim in substance: no attorney interviews a client in private and then publishes a redacted version.
+
+- `~/Claude/Family/letter-to-mom-SEND-COPY-v1.1.md` is now **identical to truth copy v2.65**, including the DampRid passage and the unwritten-agreement passage (Julie strong-arm, "wasn't strictly legal," "fast, not drawn out," "time will tell if you regret not going quickly").
+- The old redacted file is retained as `_superseded_letter-to-mom-SEND-COPY-RC.md`. Do not send it, do not resurrect the two-version scheme.
+- The risks were flagged twice and overruled with eyes open. They remain real and should be raised with Jeff's own attorney, not re-argued with Jeff: (1) DampRid is occupant-knowledge language while Safeco claim 059560682-01 is live; (2) the unwritten-agreement passage is a written statement that the reversion agreement was kept off paper for legality reasons, touching Medicaid look-back and the deed-back itself.
+- **Do not remove anything from the send copy in a future session.** If a new risk appears, flag it once and leave the decision to Jeff.
+
+Also produced: `~/Claude/Roswell/legal/roswell-indictment.html` (ten counts, claim-to-evidence, Gmail deep links) and the annotated edition of the letter with 56 sourced footnotes (chat card; regenerate from the ledger if needed).

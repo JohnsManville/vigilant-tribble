@@ -373,3 +373,21 @@ Corrected from **Elliott Dale's August 11, 2026 letter**, read directly from the
 **What this changes:** every dollar figure in the earlier path analysis was built on $2,246.17 and was wrong. Six escrowed months is **~$11,500**, not $13,477. Twelve is **~$24,000**, not $26,954. The gap the Aug 30 revision created is **~$11,500**, not $13,477. The artifact for Laura has been rebuilt on the corrected numbers. The counter-proposal v2.0 stated no per-month figure, so it is unaffected.
 
 **Method note that should have been applied earlier:** the payment figure was taken from a bank ledger without confirming which property it belonged to. The primary document was on disk the whole time. Read the primary first.
+
+### 12.18 Nancy's admission about relying on her children (2026-08-31)
+
+Jeff, 2026-08-31: his mother finally admitted she was going to need to rely on the kindness of her children.
+
+Added to the origination paragraph in truth copy **v2.67**, SEND-COPY **v1.3**, and landing version **v3.7**: "You finally said it out loud: you were going to have to rely on the kindness of your children."
+
+**Why it matters more than the line it sits next to.** "Work until you died" describes a plan. **"Rely on the kindness of your children" describes an expectation placed on other people**, stated by her, before anyone bought anything. It converts the 2020 purchase from something Jeff volunteered into something she had already named as her fallback. It also sits directly in front of the sentence about asking the family for help, which is the claim that is currently **unsourced** (ledger source note s4: no such email located in Gmail Sept 2019 to Jul 2020).
+
+**Verification status: UNVERIFIED, spoken.** Jeff's account of something she said. No document located. If a written instance exists, it would be the single most valuable find in the file, because it is her own statement of the premise the whole arrangement rests on. Added to the verification project as a target.
+
+**Handling note.** Presented in the letter as her words. If it was said and not written, the letter should keep it as reported speech, which is how it currently reads, and it should never be upgraded to a quotation.
+
+**12.18 amended, same day.** Jeff corrected the wording. It is not two separate admissions, it is one plan with two halves, and the second half is conditional on the first failing. Final text in v2.67, SEND-COPY v1.3 and v3.7:
+
+> "the plan you finally admitted to was this: work until you died at work, and if you didn't die at work, rely on the kindness of your children."
+
+The conditional is the whole point and the earlier phrasing lost it. "Work until you died" alone reads as stoicism. **"If you didn't die at work, rely on the kindness of your children" reads as a plan that had other people in it from the beginning, named by her.** Same verification status: spoken, unverified, reported speech, never to be upgraded to a quotation without a document.

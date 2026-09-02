@@ -1,6 +1,6 @@
 # Decisions — state
 
-_Updated 2026-08-31 03:33:20. Answered via `decide`. Open items are what Claude should ask about next._
+_Updated 2026-09-01 22:07:57. Answered via `decide`. Open items are what Claude should ask about next._
 
 ## Answered
 
@@ -25,3 +25,4 @@ _Updated 2026-08-31 03:33:20. Answered via `decide`. Open items are what Claude 
 - **s-d3be74ae** — Export the complete Bitsies tech-pack (support.js + assets/ + uploads/) for the Code Builder? (recommend: YES)
 - **s-45e1c5ce** — Make the cloud-brief lane local-only permanent, with no Google Drive lane on the Mini? (recommend: YES)
 - **s-8c67e6c8** — Reseat the 2TB ClaudeData drive on Thunderbolt so offload stops being single-copy? (recommend: YES)
+- **s-d68c524c** — Share the Rusty and Kari voice decks to their named readers with write access? Rusty's link has 404'd since 8/23 (recommend: YES)

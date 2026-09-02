@@ -433,3 +433,89 @@ ClaudeData** (TM-excluded) — a second copy was the missing drive's job; the `S
 
 **Refresh confidence 94/100** — `morning-open.sh`, the loaded plist, commit `34691cb`, and the
 two clean unattended nights all confirmed on disk this run.
+
+---
+
+## Refresh 2026-09-01 (covers 2026-08-31 02:03 → 2026-09-01 13:28 PDT)
+
+The session's remit widened this window from session-management into **storage, disk
+policy, and a security rebind**, all driven interactively by Jeff. Everything below is
+verified on disk this evening.
+
+### 1 · Four decisions, executed via a Decision Console
+Jeff answered a four-card artifact ([Decision Console](https://claude.ai/code/artifact/b824be0d-5461-41c0-ac89-42d2dedd559e),
+watch since expired) and the session acted on all four. Landed in `29a9b68`
+("Act on Jeff's four decisions, 2026-08-31") except where noted:
+
+- **D1 — Covert stack was bound to `0.0.0.0`** (dashboard `8765`, covert-service `7734`,
+  the untokened dashboard reachable by anything on the LAN). Rebound: both resolve their
+  bind at startup to the **Tailscale IP `100.115.69.54`**, falling back to `127.0.0.1` —
+  **never `0.0.0.0`**. Verified at the time: LAN `192.168.68.55:8765` → REFUSED, tailnet
+  → 200. Originals kept as `~/Claude/Security/bin/*.bak-pre-rebind-20260831`. The rebind
+  is confirmed in source (`dashboard.py:27` "rebound 2026-08-31").
+  **⚠️ UNVERIFIED / OPEN:** both services are **not listening right now** — the nohup'd
+  restarts died with the session. The fix is in code but nothing has re-launched them
+  under launchd, so the dashboard/service are currently down, not just rebound. A next
+  session should confirm how they're meant to start and whether they should be running.
+- **D3 — Briefs local-only, permanently.** `scripts/sanitize-brief.sh` given an
+  `UNWIRED BY DESIGN` banner and **kept, not deleted** (reversible). Nothing calls it.
+- **D4 — The canary was committed against the system's own order.** `SSH-keys-BACKUP.txt`
+  (one word, `decoy`, no key material) had been committed in `34e0d28` on Jeff's repeated
+  instruction — while `TRIAGE-2026-08-31` carried a standing order *"Do NOT commit the
+  canary."* Now `git rm --cached`'d and gitignored (`.gitignore:84-86`: `SSH-keys-BACKUP.txt`,
+  `executor/LIVE`, `scripts/*.bak-*`). File stays on disk doing its job.
+- **D2 — Second 2 TB drive: still dark.** Moved to a Thunderbolt port on Jeff's action;
+  **zero USB kernel events** on reconnect and both TB receptacles read "No device
+  connected." Diagnosed as hardware — cable, enclosure, or dead port. **BLOCKED on Jeff:**
+  the fastest split is plugging it into the MacBook (shows up there → Mini port/cable is
+  the fault). Software has nothing left to try.
+
+### 2 · Offload ran (verified) — but Jeff must empty Trash
+`~/Movies` + `~/Downloads` contents → `/Volumes/ClaudeData/archives/mini-offload-20260831/`,
+method = the verified 8/26 run (`ditto` → full md5 manifest → file-by-file compare → source
+to Trash). **Movies 48/48, Downloads 3719/3719 md5 match**; 125 top-level items moved to
+Trash. Marker gate (`verify-volume.sh`) and qBittorrent gate both passed. As with 8/26 this
+is **single-copy on ClaudeData** (TM-excluded) — the second copy was the dead drive's job.
+
+### 3 · Storage policy written down
+`STORAGE-POLICY.md` (new, committed `0ee78eb`), pointed at from `CLAUDE.md` (`ddf2f75`).
+Records the three roles (internal = live state only; ClaudeBoxSSD = TM only; ClaudeData =
+archive) and the corrected finding that **the internal disk oscillates, it is not a
+one-way ratchet**: `08-26 22 → 08-27 1 → 08-28 13 → 08-29 31 → 08-30 32 → 08-31 26 GB`.
+Troughs are APFS local snapshots accumulating faster than macOS purges. `disk-monitor.sh`
+gained an **auto-thin** path (`RECLAIM_BELOW_GB=15`, committed `5f34cfe`); the code path
+was force-tested (threshold 999) since real free space was above the trigger.
+
+### 4 · Two self-caught measurement errors (no ledger entry needed — caught same run)
+- Offload decisions had been made on an **incomplete `du`**: unprivileged, it silently
+  skipped `/Users/karifloof`. That second account is **~82 GB (~40% of the disk)** and has
+  never appeared in any offload plan. **BLOCKED on Jeff:** `sudo du -sh /Users/karifloof/*`
+  needs his password (session correctly refused to enter one). This is the real lever, not
+  the ~14 GB media offloads.
+- A raw `du` in 512-byte blocks briefly doubled the home-dir figure; corrected before it
+  was reported.
+
+### 5 · Both nightly jobs failed 8/31 — persistent, not transient
+`logs/handoff-2026-08-31.log` and `logs/distill-2026-08-31.log` both show **all three
+retries exit 1**. The `morning-open.sh` E-104 fallback worked exactly as designed —
+`briefings/NO-BRIEF-2026-09-01.md` was written and `MASTER_CATALOG.md` opened instead of a
+stale brief. That is why **there is no `TRIAGE-2026-09-01.md`**. The retry harness (added
+8/26) proved the failure is not a blip. Root cause of the `exit 1` is **not yet diagnosed**
+— first move for a next session. Recorded in commit `758ac33`.
+
+### Git-rule note (already committed, pushed to all three remotes)
+On 2026-09-01 the session committed **16 paths belonging to other lanes** (Roswell-Legal,
+`scripts/sweep/SKILL.md`, 8/31 support-record + handoff-revision docs, the regenerated
+`SESSION_REGISTRY.md` + `TRIAGE-2026-08-31.md`) in `758ac33`, under Jeff's explicit "commit
+the working tree changes" — it vetted them for keys/tokens/size first (16 KB, clean). Flagged
+here because it runs against the standing "stage only what you touched" rule; nothing was
+lost, and it was Jeff-directed.
+
+**Present disk state (this evening):** internal **20 GiB free / 91%, status ALERT** —
+oscillating as documented. The 14 GB of offload Trash and the 82 GB `karifloof` account are
+the two real levers, both blocked on Jeff.
+
+**Refresh confidence 92/100** — all commits, the rebind source, `.gitignore` entries,
+`STORAGE-POLICY.md`, the auto-thin code, the offload dir, and the nightly-failure logs
+confirmed on disk. The one soft spot: the covert services are down now and I did not restart
+them (no standing order to, and sends/launches are Jeff's) — noted as open under D1.

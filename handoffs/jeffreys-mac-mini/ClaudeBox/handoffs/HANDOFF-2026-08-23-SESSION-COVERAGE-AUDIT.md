@@ -519,3 +519,12 @@ the two real levers, both blocked on Jeff.
 `STORAGE-POLICY.md`, the auto-thin code, the offload dir, and the nightly-failure logs
 confirmed on disk. The one soft spot: the covert services are down now and I did not restart
 them (no standing order to, and sends/launches are Jeff's) — noted as open under D1.
+
+### 2026-09-02 evening sweep — no new substantive work since the 9/1 refresh
+The sweep flagged this session STALE, but the transcript's last **real** conversational turn
+was 2026-09-01 13:28 PDT (committing `758ac33` and diagnosing the nightly-job failures) —
+already covered above. Everything dated later in the transcript (through 2026-09-02 16:24 PDT)
+is automated `queue-operation` / `bridge-session` / monitor bookkeeping with empty content,
+not work. The STALE trigger was that bookkeeping bumping the timestamp, not a new session.
+Handoff remains current; open items (nightly `exit 1` diagnosis, covert-service launch, the
+three Jeff-blocked disk levers) are unchanged. Verified against the JSONL, not mtime.

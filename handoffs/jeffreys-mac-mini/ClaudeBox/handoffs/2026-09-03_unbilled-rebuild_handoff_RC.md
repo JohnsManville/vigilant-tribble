@@ -43,3 +43,10 @@ Customers with money in: Gosney, Lindsay/Lindsey, Bonner, Phillips (John, Kirk),
 Anything from a restricted source (therapy, Kari conditions doc, family timeline databases) surfacing: leave it out. If chat.db or finrecon.db needs re-reading, read only.
 
 Confidence that this handoff is sufficient to run unattended: 85/100. Gap: hours per job will be rough; flag them.
+
+## Result addendum (Claude Code session, 2026-09-03 16:15)
+- Delivered: `~/ClaudeBox/activity-log-rebuild/Odd_Jobs_Activity_Log_RC.xlsx` (Unbilled Top List, Unbilled Candidates (all), Job Timelines, Daily Log 368 days, Orphan Purchases, Money Match, Contact Summaries, Crew Payables, Open Questions, Thread Coverage, Sources & Assumptions).
+- Method: 63 contact threads opened in full by one subagent each (top 40 by score plus every calendar-named client and every FinRecon customer found in iMessage); one JSON per contact in `activity-log-rebuild/agent-out/`. Builder: `activity-log-rebuild/scripts/build_xlsx.py <ver>`; curated top list `scripts/consolidated.json`; crew payables `scripts/payables.json`. Next version: edit the JSONs, run with `v1.1`.
+- Headline: customer-side unbilled $13.7k low to $46.8k high excluding Purcell; Purcell $0 to $13.6k (disputed, defer to the 23 July Project Record); Roswell $20k to $42k as a reimbursement claim, not a receivable; crew owed out $1.8k to $7.3k.
+- Corrections to the inputs found on the way: mileage.csv "Berzac job site (N Portland)" (10 dates) and "Loerzel job site (Vancouver)" (11/11/25) are mislabels; the $250 Higgins Zelle 1/22/26 is scout dues; +15038807433 is Jeff's own Odd Jobs line; the Aug 2026 Wardenaar hashed chats are a parents' group. Logged in AI_ERROR_LOG.
+- Gaps: Google Timeline has no rows for Feb 2026 and Aug 2026; bank data thin after April 2026; no FieldVibe or est-send export yet (would resolve most unnamed-client rows).

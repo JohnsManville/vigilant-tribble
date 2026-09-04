@@ -1,6 +1,6 @@
 # Decisions — state
 
-_Updated 2026-09-02 22:12:34. Answered via `decide`. Open items are what Claude should ask about next._
+_Updated 2026-09-03 17:50:50. Answered via `decide`. Open items are what Claude should ask about next._
 
 ## Answered
 
@@ -26,4 +26,3 @@ _Updated 2026-09-02 22:12:34. Answered via `decide`. Open items are what Claude 
 - **s-45e1c5ce** — Make the cloud-brief lane local-only permanent, with no Google Drive lane on the Mini? (recommend: YES)
 - **s-8c67e6c8** — Reseat the 2TB ClaudeData drive on Thunderbolt so offload stops being single-copy? (recommend: YES)
 - **s-d68c524c** — Share the Rusty and Kari voice decks to their named readers with write access? Rusty's link has 404'd since 8/23 (recommend: YES)
-- **s-35f6a0e1** — Mac Mini covert security audit + tripwire build — 8/30 poll: session resumed 12:10 PDT ~1min ("any update?"), no state change — re-verified this sweep: covert-service PID 14983 *:7734 + dashboard PID 14985 *:8765 (NO token) still running; DELIVERY_ARMED; audio OFF; launchd daemons still NOT l... (recommend: YES)
